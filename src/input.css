@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply hover:text-primaryBtn transition-colors duration-300;
+  }
+
+  .primary-btn {
+    @apply bg-primaryBtn hover:bg-primaryTextColor rounded-md border-b-2 border-b-blue-500 px-6 py-2.5 capitalize text-white ring-inset drop-shadow-xl transition-colors duration-300 ease-in-out hover:border-b-black;
+  }
+}
