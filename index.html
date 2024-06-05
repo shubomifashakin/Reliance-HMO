@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="./src/output.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Reliance HMO</title>
   </head>
   <body>
     <div id="app" class="bg-secondaryBlue">
@@ -98,7 +98,7 @@
                 Trusted By Over 1600 businesses
               </h2>
 
-              <div class="flex items-center gap-x-5">
+              <div class="flex items-center gap-x-6">
                 <svg
                   width="28"
                   height="29"
@@ -280,12 +280,9 @@
                 alt="hero image"
               />
 
+            
               <div
-                class="absolute top-0 h-full w-full bg-blue-900 opacity-20 mix-blend-overlay"
-              ></div>
-
-              <div
-                class="absolute bottom-8 left-8 flex items-center gap-x-3 text-white"
+                class="absolute bottom-8 left-8 flex items-center justify-center gap-x-3 text-white"
               >
                 <button
                   title="play"
@@ -309,12 +306,83 @@
 
                 <span>
                   <h1 class="font-semibold">Play this video</h1>
-                  <p>To see how we are powering next-generation businesses</p>
+                  <p class="text-sm">To see how we are powering next-generation businesses</p>
                 </span>
               </div>
             </div>
           </div>
         </main>
+      </section>
+
+      <section id="section-2" class="py-24 w-full px-44 bg-white">
+       <div class="text-center space-y-6">
+        <h2 class="font-bold text-4xl text-secondaryBlue
+        ">Designed to make high quality healthcare <br>
+          delightful, affordable and accessible.</h2>
+          <p>Bringing healthcare to you and avoid the usual stressful healthcare system.</p>
+       </div>
+
+       <div class="flex gap-x-3 justify-center mt-16">
+        <div class="cream">
+          <div>
+            <img alt="employees" class="aspect-square" src="./src/assets/images/image3.png"/>
+          </div>
+          
+          <div class="p-6">
+            <h2 class="font-semibold text-primaryTextColor">Telemedicine</h2>
+            <p class="text-stone-400 text-sm">Remote access to doctors in minutes in our app.</p>
+          </div>
+        </div>
+
+        <div class="cream">
+          <div class="relative overflow-hidden">
+            <img alt="employees" class="aspect-square z-50 relative" src="./src/assets/images/image4.png"/>
+            <img src="./src/assets/images/dots.png" alt="overlay" class="absolute top-0 left-0 z-10"/>
+          </div>
+          
+          <div class="p-6">
+            <h2 class="font-semibold text-primaryTextColor">Drug Delivery</h2>
+            <p class="text-stone-400 text-sm">Get prescribed medication delivered to location of choice.</p>
+          </div>
+        </div>
+       </div>
+
+       <div class="flex gap-x-3 justify-center mt-3">
+          <div class="rounded-xl border bg-cream w-1/3">
+            <div class="relative overflow-hidden">
+              <img class="aspect-video z-50 relative" alt='image' src="./src/assets/images/image5.png"/>
+              <img src="./src/assets/images/dots.png" alt="overlay" class="absolute top-0 left-0 z-10"/>
+          
+            </div>
+
+            <div class="p-6">
+              <h2 class="font-semibold text-primaryTextColor">Emergency Care</h2>
+              <p class="text-stone-400 text-sm">Fast air evacuation during occupational emergencies.</p>
+            </div>
+          </div>
+
+          <div class="rounded-xl border bg-cream w-1/3">
+            <div>
+              <img class="aspect-video" alt='image' src="./src/assets/images/image6.png"/>
+            </div>
+
+            <div class="p-6">
+              <h2 class="font-semibold text-primaryTextColor">Coverage for pre-existing conditions</h2>
+              <p class="text-stone-400 text-sm">Get medical and specialist coverage for pre-existing conditions like diabetes and asthma.</p>
+            </div>
+          </div>
+          
+          <div class="rounded-xl border bg-cream w-1/3">
+            <div>
+              <img class="aspect-video" alt='image' src="./src/assets/images/image7.png"/>
+            </div>
+
+            <div class="p-6">
+              <h2 class="font-semibold text-primaryTextColor">24/7 Customer care support</h2>
+              <p class="text-stone-400 text-sm">Speak to a support agent anytime it is needed.</p>
+            </div>
+          </div>
+       </div>
       </section>
     </div>
     <script type="module" src="/src/main.ts"></script>

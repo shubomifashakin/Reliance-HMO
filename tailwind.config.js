@@ -8,6 +8,7 @@ module.exports = {
         secondaryGreen: "#12BF4D",
         primaryTextColor: "#0A212E",
         primaryBtn: "#009DF5",
+        cream:'#FBFCFD'
       },
       backgroundImage: {
         "section-gradient":
