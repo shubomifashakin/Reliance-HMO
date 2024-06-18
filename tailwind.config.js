@@ -4,15 +4,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        secondaryBlue: "#112936",
+        secondaryBlue: "#375262",
         secondaryGreen: "#12BF4D",
-        primaryTextColor: "#0A212E",
-        primaryBtn: "#009DF5",
-        cream:'#FBFCFD'
+        relianceDarkBlue: "#0A212E",
+        relianceLightBlue: "#009DF5",
+        relianceLighterBlue: "#223743",
+        cream: "#FBFCFD",
+        relianceGrey: "#61676B",
       },
       backgroundImage: {
         "section-gradient":
-          "linear-gradient(336deg, rgba(188,251,255,1) 0%, rgba(255,255,255,1) 75%)",
+          "linear-gradient(336deg, rgba(188,251,255,1) 0%, rgba(255,255,255,1) 85%)",
+        "text-gradient":
+          "linear-gradient(60deg, #112936 35%, #e5e7eb82 45%, #112936 46%)",
+        "text-gradient-green":
+          "linear-gradient(90deg, #8FD7FF 0%, #73FFE6 49.41%, #81F3A8 100%)",
+
+        "footer-gradient": "linear-gradient(90deg, #009DF5 0%, #14D255 100%)",
       },
     },
   },
