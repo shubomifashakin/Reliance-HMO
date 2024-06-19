@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: "Proxima Nova";
-  src: url("/public/fonts/Proxima\ Nova\ Thin.otf") format("opentype");
+  src: url("/fonts/Proxima\ Nova\ Thin.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
