@@ -1,8 +1,12 @@
 import Lenis from "lenis";
 import "./output.css";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import { gsap } from "gsap";
+
+import { SlowMo } from "gsap/EasePack";
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger, SlowMo);
 
 const lenis = new Lenis({ duration: 4 });
 
@@ -35,8 +39,9 @@ class App implements App {
       mm.add("(min-width: 1024px)", () => {
         gsap.from(c, {
           opacity: 0,
-          duration: 1,
+          duration: 2,
           scale: 0,
+          ease: "slow(0.8,0.8,false)",
 
           scrollTrigger: {
             trigger: c,
@@ -55,10 +60,6 @@ class App implements App {
     });
 
     tl.from("#navbar", { opacity: 0, delay: 0.5 })
-      .from("#hero-heading", {
-        opacity: 0,
-        scale: 0,
-      })
       .from("#hero-left", { opacity: 0, scale: 0, transformOrigin: "left" })
       .from("#hero-right", { opacity: 0, scale: 0, transformOrigin: "left" });
   }

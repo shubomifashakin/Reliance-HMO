@@ -111,7 +111,7 @@ body {
   }
 
   .testimonial-image-container {
-    @apply h-full w-12 overflow-hidden rounded-full border-white;
+    @apply h-12 w-12 overflow-hidden rounded-full border-white;
   }
 
   .testimonial-image {
@@ -178,4 +178,8 @@ html.lenis body {
 
 .triangle {
   clip-path: polygon(100% 0, 50% 100%, 0 0);
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
 }
