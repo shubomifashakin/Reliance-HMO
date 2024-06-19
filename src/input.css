@@ -2,6 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/fonts/ProximaNova-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/public/fonts/Proxima\ Nova\ Thin.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/fonts/Proxima\ Nova\ Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/fonts/Proxima\ Nova\ Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/fonts/Proxima\ Nova\ Extrabold.otf.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+}
+
 @layer components {
   .nav-link {
     @apply transition-colors duration-300 hover:text-relianceLightBlue;
@@ -28,7 +67,7 @@
   }
 
   .span-no {
-    @apply inline-block h-8 w-8 rounded-full bg-relianceLightBlue text-center leading-8 text-white ring-blue-200 ring-offset-1;
+    @apply inline-block h-8 w-8 rounded-full bg-relianceLightBlue text-center leading-8 text-white shadow-inner ring ring-[#33B1F74D] ring-offset-1;
   }
 
   .inner-4-div {
@@ -40,7 +79,7 @@
   }
 
   .inner-4-div-leading-text {
-    @apply text-sm text-relianceGrey;
+    @apply text-relianceGrey;
   }
 
   .fadeIn {
@@ -56,7 +95,7 @@
   }
 
   .testimonial-inner-1 {
-    @apply relative rounded-lg bg-secondaryBlue p-6;
+    @apply relative rounded-lg bg-secondaryBlue px-6 py-6;
   }
 
   .testimonial-inner-2 {
@@ -68,7 +107,7 @@
   }
 
   .testimonial-text {
-    @apply text-sm tracking-wide text-[#D7DCE0];
+    @apply font-light text-[#D7DCE0];
   }
 
   .testimonial-image-container {

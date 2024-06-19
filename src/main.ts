@@ -15,7 +15,8 @@ requestAnimationFrame(raf);
 
 interface App {
   section2: Element | null;
-  section2Anim(): void;
+  fadeInElementsFn(): void;
+  heroAnimation(): void;
 }
 
 class App implements App {
@@ -23,6 +24,8 @@ class App implements App {
 
   constructor() {
     this.fadeInElementsFn();
+
+    this.heroAnimation();
   }
 
   fadeInElementsFn(): void {
@@ -44,6 +47,20 @@ class App implements App {
         });
       });
     });
+  }
+
+  heroAnimation(): void {
+    const tl = gsap.timeline({
+      defaults: { duration: 0.5, ease: "power1.inOut" },
+    });
+
+    tl.from("#navbar", { opacity: 0, delay: 0.5 })
+      .from("#hero-heading", {
+        opacity: 0,
+        scale: 0,
+      })
+      .from("#hero-left", { opacity: 0, scale: 0, transformOrigin: "left" })
+      .from("#hero-right", { opacity: 0, scale: 0, transformOrigin: "left" });
   }
 }
 new App();
