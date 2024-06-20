@@ -22,6 +22,21 @@ module.exports = {
 
         "footer-gradient": "linear-gradient(90deg, #009DF5 0%, #14D255 100%)",
       },
+
+      animation: {
+        flash: "flash .5s ease-in-out",
+      },
+
+      keyframes: {
+        flash: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+      },
+
+      screens: {
+        "2xl": "1440px",
+      },
     },
   },
   plugins: [],

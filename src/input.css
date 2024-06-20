@@ -71,7 +71,7 @@ body {
   }
 
   .inner-4-div {
-    @apply flex items-center justify-normal gap-x-5 rounded-xl border bg-white p-6 drop-shadow-sm lg:items-start lg:justify-between;
+    @apply flex items-center justify-normal gap-x-5 rounded-xl border bg-white p-6 drop-shadow-sm lg:items-start;
   }
 
   .inner-4-div-heading {
@@ -139,11 +139,11 @@ body {
   }
 
   .details-close-style {
-    @apply hidden text-2xl group-open:block;
+    @apply group-open:animate-flash hidden text-2xl group-open:block;
   }
 
   .details-summary-info {
-    @apply text-sm text-relianceGrey;
+    @apply group-open:animate-flash text-sm text-relianceGrey;
   }
 
   .footer-header {
