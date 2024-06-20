@@ -660,6 +660,14 @@ video {
   --tw-ring-color: #11191C1A;
 }
 
+.primary-btn:active {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(0 0 0 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 33 46 / var(--tw-bg-opacity));
+  --tw-ring-color: #11191C1A;
+}
+
 .inner-2-div {
   flex-basis: 100%;
 }
@@ -3527,7 +3535,26 @@ details > summary::-webkit-details-marker {
   text-align: center;
 }
 
+.active\:border-relianceDarkBlue:active {
+  --tw-border-opacity: 1;
+  border-color: rgb(10 33 46 / var(--tw-border-opacity));
+}
+
+.active\:bg-relianceDarkBlue:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 33 46 / var(--tw-bg-opacity));
+}
+
+.active\:text-white:active {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .group:hover .group-hover\:fill-white {
+  fill: #fff;
+}
+
+.group:active .group-active\:fill-white {
   fill: #fff;
 }
 
