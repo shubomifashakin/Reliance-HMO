@@ -37,6 +37,16 @@ module.exports = {
       screens: {
         "2xl": "1440px",
       },
+
+      fontSize: {
+        "4xl": [
+          "2.5rem",
+          {
+            lineHeight: "3rem",
+            letterSpacing: "-0.0625rem",
+          },
+        ],
+      },
     },
   },
   plugins: [],

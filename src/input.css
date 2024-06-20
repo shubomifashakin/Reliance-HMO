@@ -43,11 +43,11 @@ body {
 
 @layer components {
   .nav-link {
-    @apply transition-colors duration-300 hover:text-relianceLightBlue;
+    @apply transition-colors duration-300 hover:text-relianceLightBlue active:text-relianceLightBlue;
   }
 
   .primary-btn {
-    @apply rounded-md border-b-2 border-b-blue-500 bg-relianceLightBlue px-6 py-2.5 capitalize text-white ring-inset drop-shadow-xl transition-colors duration-300 ease-in-out hover:border-b-black hover:bg-relianceDarkBlue;
+    @apply rounded-lg border-b-2 border-b-[#0a212e3a] bg-relianceLightBlue px-9 py-2.5 capitalize text-white ring ring-[#33B1F74D] drop-shadow-xl transition-colors duration-300 ease-in-out hover:border-b-black hover:bg-relianceDarkBlue hover:ring-[#11191C1A];
   }
 
   .inner-2-div {
@@ -67,7 +67,7 @@ body {
   }
 
   .span-no {
-    @apply inline-block h-8 w-8 rounded-full bg-relianceLightBlue text-center leading-8 text-white shadow-inner ring ring-[#33B1F74D] ring-offset-1;
+    @apply flex h-10 w-10 items-center justify-center rounded-full border-b-2 border-t-[.1875rem] border-b-[#04040A17] border-t-[#33B1F7] bg-relianceLightBlue text-center leading-8 text-white shadow-inner ring ring-[#33B1F74D] ring-offset-1;
   }
 
   .inner-4-div {
@@ -79,7 +79,7 @@ body {
   }
 
   .inner-4-div-leading-text {
-    @apply text-relianceGrey;
+    @apply text-sm text-relianceGrey;
   }
 
   .fadeIn {
@@ -107,7 +107,7 @@ body {
   }
 
   .testimonial-text {
-    @apply font-light text-[#D7DCE0];
+    @apply text-base font-light text-[#D7DCE0];
   }
 
   .testimonial-image-container {
@@ -139,19 +139,19 @@ body {
   }
 
   .details-close-style {
-    @apply group-open:animate-flash hidden text-2xl group-open:block;
+    @apply hidden text-2xl group-open:block group-open:animate-flash;
   }
 
   .details-summary-info {
-    @apply group-open:animate-flash text-sm text-relianceGrey;
+    @apply text-sm text-relianceGrey group-open:animate-flash;
   }
 
   .footer-header {
-    @apply font-bold text-relianceDarkBlue;
+    @apply text-lg font-bold text-relianceDarkBlue;
   }
 
   .footer-link {
-    @apply text-relianceGrey;
+    @apply text-relianceGrey transition-colors duration-300 hover:text-relianceDarkBlue active:text-relianceDarkBlue;
   }
 }
 

@@ -41,11 +41,12 @@ class App implements App {
           opacity: 0,
           duration: 2,
           scale: 0,
-          ease: "slow(0.8,0.8,false)",
+          ease: "slow(0.6,0.6,false)",
+          transformOrigin: "bottom",
 
           scrollTrigger: {
             trigger: c,
-            start: "bottom bottom",
+            start: "center bottom",
             end: "bottom bottom",
             scrub: 1,
           },

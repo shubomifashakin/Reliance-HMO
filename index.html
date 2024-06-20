@@ -105,7 +105,9 @@
               </li>
 
               <li>
-                <button type="button" class="primary-btn">Get A Quote</button>
+                <button type="button" title="Get A Quote" class="primary-btn">
+                  Get A Quote
+                </button>
               </li>
             </ul>
           </nav>
@@ -128,15 +130,17 @@
                   delightful for businesses in Nigeria.
                 </p>
 
-                <button type="button" class="primary-btn">Get A Quote</button>
+                <button type="button" title="Get a Quote" class="primary-btn">
+                  Get A Quote
+                </button>
               </div>
 
               <div>
-                <h2 class="mb-6 font-semibold capitalize">
+                <h2 class="mb-4 font-semibold capitalize">
                   Trusted By Over 1600 businesses
                 </h2>
 
-                <div class="flex items-center gap-x-6">
+                <div class="flex items-end gap-x-4">
                   <div>
                     <img
                       src="./src/assets/svgs/shell.svg"
@@ -177,13 +181,17 @@
               class="hidden h-full basis-1/2 items-end lg:flex"
             >
               <div
-                class="relative w-full overflow-hidden rounded-2xl bg-white bg-opacity-35 p-2"
+                class="relative w-full overflow-hidden rounded-2xl border-[.5rem] border-white border-opacity-70"
               >
                 <img
-                  src="./src/assets/images/hero image.jpeg"
+                  src="./src/assets/images/hero image.jpg"
                   class="rounded-lg blur-[100%] backdrop-blur-xl"
                   alt="hero image"
                 />
+
+                <div
+                  class="absolute left-0 top-0 h-full w-full bg-relianceDarkBlue bg-opacity-40 mix-blend-darken"
+                ></div>
 
                 <div
                   class="absolute bottom-8 left-8 flex items-center justify-center gap-x-3 text-white"
@@ -221,17 +229,17 @@
         </div>
       </section>
 
-      <section id="section-2" class="w-full py-20">
+      <section id="section-2" class="py-20">
         <div id="section-2-inner-1" class="space-y-6 px-4 text-center lg:px-0">
           <h2
-            class="fadeIn text-2xl font-bold text-relianceDarkBlue lg:text-4xl"
+            class="fadeIn text-4xl font-bold text-relianceDarkBlue lg:text-4xl"
           >
             Designed to make high quality healthcare
             <br class="hidden lg:block" />
             delightful, affordable and accessible.
           </h2>
 
-          <p class="fadeIn">
+          <p class="fadeIn text-lg">
             Bringing healthcare to you and avoid the usual stressful healthcare
             system.
           </p>
@@ -365,13 +373,13 @@
         id="section-3"
         class="flex flex-col items-end gap-14 bg-cream px-12 py-16 lg:flex-row lg:px-24 2xl:px-32"
       >
-        <div id="section-3-inner-1" class="basis-1/2 space-y-16">
+        <div id="section-3-inner-1" class="basis-1/2 space-y-12">
           <div class="space-y-4">
             <h2 class="fadeIn text-4xl font-bold text-relianceDarkBlue">
               Less paper, more speed
             </h2>
 
-            <p class="fadeIn pr-32 text-lg">
+            <p class="fadeIn pr-28 text-lg">
               Onboard your team within minutes, no matter the size and meet your
               dedicated Customer Representative who’s there for you every step
               of the way.
@@ -438,16 +446,23 @@
             <img
               loading="lazy"
               src="./src/assets/images/image8.png"
-              alt="man with headphones"
+              alt="a man with headphones"
               class="z-10 aspect-square object-cover"
             />
+
+            <div
+              class="absolute left-0 top-0 h-full w-full bg-relianceDarkBlue bg-opacity-15 mix-blend-hard-light"
+            ></div>
           </div>
         </div>
       </section>
 
-      <section id="section-4" class="w-full bg-relianceDarkBlue py-24">
+      <section
+        id="section-4"
+        class="w-full bg-relianceDarkBlue px-12 py-24 lg:px-24 2xl:px-32"
+      >
         <h2
-          class="fadeIn bg-text-gradient-green bg-clip-text text-center text-5xl font-bold leading-[4.5rem] text-transparent"
+          class="fadeIn bg-text-gradient-green bg-clip-text text-center text-4xl font-bold leading-[4.5rem] text-transparent"
         >
           Loved by next-generation businesses
         </h2>
@@ -457,9 +472,7 @@
           our healthcare provider
         </p>
 
-        <div
-          class="mt-16 grid grid-cols-1 grid-rows-1 gap-4 px-12 lg:grid-cols-3 lg:px-24 2xl:px-32"
-        >
+        <div class="mt-16 grid grid-cols-1 grid-rows-1 gap-4 lg:grid-cols-3">
           <div class="testimonial-container">
             <div class="fadeIn testimonial">
               <div class="testimonial-inner-1">
@@ -666,13 +679,13 @@
         <div
           class="relative flex justify-between rounded-2xl bg-relianceLightBlue text-white"
         >
-          <div class="basis-[41%] space-y-6 py-[7rem] pl-24">
+          <div class="basis-[41%] space-y-6 py-28 pl-24">
             <h2 class="text-4xl font-bold">
               Need Help <br />
               choosing an HMO?
             </h2>
 
-            <p>
+            <p class="text-lg">
               Download How to Choose a Healthcare Plan for Your Business to
               learn which questions you should be asking when evaluating health
               plan providers.
@@ -681,7 +694,7 @@
             <button
               title="download PDF"
               type="button"
-              class="rounded-md bg-white px-4 py-2 font-semibold text-relianceLightBlue ring drop-shadow-xl"
+              class="rounded-lg border-b-[.1875rem] bg-white px-6 py-2.5 font-semibold text-relianceLightBlue ring ring-[#11191C1A] drop-shadow-xl duration-300 ease-linear hover:border-relianceDarkBlue hover:bg-relianceDarkBlue hover:text-white"
             >
               Download Now
             </button>
@@ -705,14 +718,14 @@
         </div>
       </section>
 
-      <section id="section-6" class="w-full bg-cream py-32">
+      <section id="section-6" class="bg-cream py-32">
         <h2
-          class="fadeIn text-center text-xl font-bold leading-[4.5rem] text-relianceDarkBlue md:text-3xl xl:text-5xl"
+          class="fadeIn text-center text-xl font-bold leading-[4.5rem] text-relianceDarkBlue md:text-3xl xl:text-4xl"
         >
           Frequently asked questions
         </h2>
 
-        <p class="fadeIn text-center text-relianceDarkBlue">
+        <p class="fadeIn text-center text-lg text-relianceDarkBlue">
           Everything you need to know about partnering with us
         </p>
 
@@ -792,13 +805,15 @@
             Partner with Reliance HMO today
           </h2>
 
-          <p class="fadeIn text-center text-relianceDarkBlue">
+          <p class="fadeIn text-center text-lg text-relianceDarkBlue">
             Want to improve the lives of your workforce and join the
             next-generation<br />
             businesses using our Healthcare provide? Partner with us today.
           </p>
 
-          <button type="button" class="fadeIn primary-btn">Get A Quote</button>
+          <button type="button" title="Get A Quote" class="fadeIn primary-btn">
+            Get A Quote
+          </button>
         </div>
 
         <div class="flex justify-between bg-white px-24 py-12 2xl:px-32">
@@ -869,11 +884,15 @@
             </li>
 
             <li class="fadeIn">
-              <a href="#" class="footer-link">hello@reliancehmo.com</a>
+              <a href="mailto:hello@reliancehmo.com" class="footer-link"
+                >hello@reliancehmo.com</a
+              >
             </li>
 
             <li class="fadeIn">
-              <a href="#" class="footer-link">0700-735426323</a>
+              <a href="tel:+2340700735426323" class="footer-link"
+                >0700-735426323</a
+              >
             </li>
 
             <li class="fadeIn">
@@ -899,7 +918,7 @@
           viewBox="0 0 305 460"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="absolute -top-32 left-0"
+          class="pointer-events-none absolute -top-32 left-0"
         >
           <path
             d="M304.003 229.25C304.003 234.789 302.912 240.274 300.792 245.392C298.673 250.509 295.566 255.159 291.649 259.076C287.732 262.993 283.082 266.1 277.965 268.22C272.847 270.339 267.362 271.43 261.823 271.43H77.6919C72.1527 271.43 66.6677 270.339 61.5501 268.22C56.4325 266.1 51.7826 262.993 47.8658 259.076C43.949 255.159 40.842 250.509 38.7222 245.392C36.6024 240.274 35.5114 234.789 35.5114 229.25V45.7416C35.162 39.9972 35.9917 34.2422 37.9496 28.8305C39.9074 23.4189 42.952 18.4651 46.8958 14.274C50.8397 10.083 55.5995 6.74327 60.8823 4.46045C66.1651 2.17764 71.8591 1 77.6141 1C83.369 1 89.063 2.17764 94.3458 4.46045C99.6286 6.74327 104.388 10.083 108.332 14.274C112.276 18.4651 115.321 23.4189 117.279 28.8305C119.236 34.2422 120.066 39.9972 119.717 45.7416V187.692H261.823C272.903 187.691 283.538 192.049 291.431 199.825C299.324 207.602 303.84 218.171 304.003 229.25Z"
@@ -923,7 +942,7 @@
           viewBox="0 0 305 460"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="absolute right-0 top-1/2 -translate-y-1/2 rotate-180"
+          class="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 rotate-180"
         >
           <path
             d="M304.003 229.25C304.003 234.789 302.912 240.274 300.792 245.392C298.673 250.509 295.566 255.159 291.649 259.076C287.732 262.993 283.082 266.1 277.965 268.22C272.847 270.339 267.362 271.43 261.823 271.43H77.6919C72.1527 271.43 66.6677 270.339 61.5501 268.22C56.4325 266.1 51.7826 262.993 47.8658 259.076C43.949 255.159 40.842 250.509 38.7222 245.392C36.6024 240.274 35.5114 234.789 35.5114 229.25V45.7416C35.162 39.9972 35.9917 34.2422 37.9496 28.8305C39.9074 23.4189 42.952 18.4651 46.8958 14.274C50.8397 10.083 55.5995 6.74327 60.8823 4.46045C66.1651 2.17764 71.8591 1 77.6141 1C83.369 1 89.063 2.17764 94.3458 4.46045C99.6286 6.74327 104.388 10.083 108.332 14.274C112.276 18.4651 115.321 23.4189 117.279 28.8305C119.236 34.2422 120.066 39.9972 119.717 45.7416V187.692H261.823C272.903 187.691 283.538 192.049 291.431 199.825C299.324 207.602 303.84 218.171 304.003 229.25Z"
