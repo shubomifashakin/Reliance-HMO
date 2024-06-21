@@ -47,7 +47,7 @@ body {
   }
 
   .primary-btn {
-    @apply rounded-lg border-b-2 border-b-[#0a212e3a] bg-relianceLightBlue px-9 py-2.5 capitalize text-white ring ring-[#33B1F74D] drop-shadow-xl transition-colors duration-300 ease-in-out hover:border-b-black hover:bg-relianceDarkBlue hover:ring-[#11191C1A] active:border-b-black active:bg-relianceDarkBlue active:ring-[#11191C1A];
+    @apply rounded-lg border-b-2 border-b-[#0a212e3a] bg-relianceLightBlue px-9 py-2.5 capitalize text-white ring ring-[#33B1F74D] drop-shadow-xl transition-colors duration-300 ease-in-out hover:border-b-slate-600 hover:bg-relianceDarkBlue hover:ring-[#11191C1A] active:border-b-slate-600 active:bg-relianceDarkBlue active:ring-[#11191C1A];
   }
 
   .inner-2-div {
@@ -131,9 +131,12 @@ body {
   }
 
   .summary-style {
-    @apply flex cursor-pointer list-none items-center justify-between gap-x-3 font-medium text-relianceDarkBlue;
+    @apply flex cursor-pointer list-none items-center justify-between gap-x-3 font-medium text-relianceDarkBlue duration-300 ease-linear hover:text-relianceLightBlue active:text-relianceLightBlue;
   }
 
+  .summary-text {
+    @apply text-inherit;
+  }
   .details-open-style {
     @apply text-2xl group-open:hidden;
   }
