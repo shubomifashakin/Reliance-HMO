@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="overflow-hidden">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
 
@@ -871,17 +871,24 @@
         </div>
       </section>
 
-      <footer id="section-7" class="relative flex flex-col overflow-hidden">
+      <footer
+        id="section-7"
+        class="lg:text-bas relative flex flex-col overflow-hidden text-sm"
+      >
         <div
-          class="relative flex flex-col items-center justify-center space-y-5 py-12"
+          class="relative flex flex-col items-center justify-center space-y-5 px-2 py-12"
         >
-          <h2 class="fadeIn text-4xl font-bold text-relianceDarkBlue">
+          <h2
+            class="fadeIn text-center text-2xl font-bold text-relianceDarkBlue lg:text-4xl"
+          >
             Partner with Reliance HMO today
           </h2>
 
-          <p class="fadeIn text-center text-lg text-relianceDarkBlue">
+          <p
+            class="fadeIn text-center text-sm text-relianceDarkBlue lg:text-lg"
+          >
             Want to improve the lives of your workforce and join the
-            next-generation<br />
+            next-generation<br class="hidden lg:block" />
             businesses using our Healthcare provide? Partner with us today.
           </p>
 
@@ -890,8 +897,12 @@
           </button>
         </div>
 
-        <div class="flex justify-between bg-white px-24 py-12 2xl:px-32">
-          <ul>
+        <div
+          class="grid grid-cols-2 grid-rows-[0.25fr_1fr_1fr] flex-wrap gap-y-5 bg-white px-5 py-4 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr] lg:grid-rows-1 lg:px-24 lg:py-12 2xl:px-32"
+        >
+          <ul
+            class="col-span-full row-start-1 row-end-1 lg:col-auto lg:row-auto"
+          >
             <li>
               <img
                 loading="lazy"
@@ -902,7 +913,9 @@
             </li>
           </ul>
 
-          <ul class="space-y-4">
+          <ul
+            class="col-start-1 col-end-1 row-start-2 row-end-2 space-y-2 lg:col-auto lg:row-auto"
+          >
             <li class="fadeIn">
               <h1 class="footer-header">About</h1>
             </li>
@@ -924,7 +937,9 @@
             </li>
           </ul>
 
-          <ul class="space-y-4">
+          <ul
+            class="col-start-2 col-end-2 row-start-2 row-end-2 space-y-2 lg:col-auto lg:row-auto"
+          >
             <li class="fadeIn">
               <h1 class="footer-header">Support</h1>
             </li>
@@ -938,7 +953,9 @@
             </li>
           </ul>
 
-          <ul class="space-y-4">
+          <ul
+            class="col-start-1 col-end-1 row-start-3 row-end-3 space-y-2 lg:col-auto lg:row-auto"
+          >
             <li class="fadeIn">
               <h1 class="footer-header">Legal</h1>
             </li>
@@ -952,7 +969,9 @@
             </li>
           </ul>
 
-          <ul class="space-y-4">
+          <ul
+            class="col-start-2 col-end-2 row-start-3 row-end-3 space-y-2 lg:col-auto lg:row-auto"
+          >
             <li class="fadeIn">
               <h1 class="footer-header">Contact Us</h1>
             </li>
@@ -979,7 +998,9 @@
         </div>
 
         <div class="bg-footer-gradient pb-3">
-          <div class="w-full rounded-b-2xl bg-white p-2 text-center">
+          <div
+            class="w-full rounded-b-3xl bg-white p-2 text-center lg:rounded-b-2xl"
+          >
             <p class="fadeIn text-sm text-relianceDarkBlue">
               &copy; 2024 Redesigned by Daniel Osonuga
             </p>
@@ -992,7 +1013,7 @@
           viewBox="0 0 305 460"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="pointer-events-none absolute -top-32 left-0"
+          class="min-w pointer-events-none absolute -top-32 left-0"
         >
           <path
             d="M304.003 229.25C304.003 234.789 302.912 240.274 300.792 245.392C298.673 250.509 295.566 255.159 291.649 259.076C287.732 262.993 283.082 266.1 277.965 268.22C272.847 270.339 267.362 271.43 261.823 271.43H77.6919C72.1527 271.43 66.6677 270.339 61.5501 268.22C56.4325 266.1 51.7826 262.993 47.8658 259.076C43.949 255.159 40.842 250.509 38.7222 245.392C36.6024 240.274 35.5114 234.789 35.5114 229.25V45.7416C35.162 39.9972 35.9917 34.2422 37.9496 28.8305C39.9074 23.4189 42.952 18.4651 46.8958 14.274C50.8397 10.083 55.5995 6.74327 60.8823 4.46045C66.1651 2.17764 71.8591 1 77.6141 1C83.369 1 89.063 2.17764 94.3458 4.46045C99.6286 6.74327 104.388 10.083 108.332 14.274C112.276 18.4651 115.321 23.4189 117.279 28.8305C119.236 34.2422 120.066 39.9972 119.717 45.7416V187.692H261.823C272.903 187.691 283.538 192.049 291.431 199.825C299.324 207.602 303.84 218.171 304.003 229.25Z"
