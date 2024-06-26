@@ -64,22 +64,21 @@ class App implements App {
     this.fadeInEls?.forEach((c): void => {
       let mm = gsap.matchMedia();
 
-      mm.add("(min-width: 1024px)", () => {
-        gsap.from(c, {
-          opacity: 0,
-          duration: 2,
-          scale: 0,
-          ease: "slow(0.6,0.6,false)",
-          transformOrigin: "bottom",
+      // mm.add("(min-width: 1024px)", () => {
+      gsap.from(c, {
+        opacity: 0,
+        duration: 2,
+        scale: 0,
+        ease: "slow(0.6,0.6,false)",
 
-          scrollTrigger: {
-            trigger: c,
-            start: "center bottom",
-            end: "bottom bottom",
-            scrub: 1,
-          },
-        });
+        scrollTrigger: {
+          trigger: c,
+          start: "top bottom",
+          end: "bottom bottom",
+          scrub: 1,
+        },
       });
+      // });
     });
   }
 

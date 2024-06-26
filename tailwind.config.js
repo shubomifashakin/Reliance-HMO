@@ -27,6 +27,7 @@ module.exports = {
         flash: "flash .5s ease-in-out",
         slideIn: "slideIn .5s ease-in-out",
         slideOut: "slideOut .5s ease-in-out",
+        slideLeft: "slideLeft 15s  forwards linear infinite 1.5s",
       },
 
       keyframes: {
@@ -43,6 +44,11 @@ module.exports = {
         slideOut: {
           from: { top: "100%" },
           to: { top: "-100%" },
+        },
+
+        slideLeft: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
         },
       },
 

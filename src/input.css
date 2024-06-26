@@ -46,11 +46,11 @@ body {
 }
 
 .polive {
-  @apply animate-slideIn !block;
+  @apply !block animate-slideIn;
 }
 
 .dropdownHidden {
-  @apply animate-slideOut !hidden;
+  @apply !hidden animate-slideOut;
 }
 
 @layer components {
