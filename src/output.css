@@ -1502,6 +1502,10 @@ video {
   max-width: 14rem;
 }
 
+.flex-none {
+  flex: none;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
