@@ -65,23 +65,52 @@ class App implements App {
 
   fadeInElementsFn(): void {
     this.fadeInEls?.forEach((c): void => {
-      // let mm = gsap.matchMedia();
+      let mm = gsap.matchMedia();
 
-      // mm.add("(min-width: 1024px)", () => {
-      gsap.from(c, {
-        opacity: 0,
-        duration: 2,
-        scale: 0,
-        ease: "slow(0.6,0.6,false)",
+      mm.add("(min-width: 1024px)", () => {
+        gsap.from(c, {
+          opacity: 0,
+          duration: 2,
+          scale: 0,
+          ease: "slow(0.6,0.6,false)",
 
-        scrollTrigger: {
-          trigger: c,
-          start: "top bottom",
-          end: "bottom bottom",
-          scrub: 1,
-        },
+          scrollTrigger: {
+            trigger: c,
+            start: "top bottom",
+            end: "bottom bottom",
+            scrub: 1,
+          },
+        });
       });
-      // });
+
+      mm.add("(min-width: 300px) and (max-width: 1024px)", () => {
+        if (c.contains(document.querySelector("#headphones"))) {
+          gsap.from(c, {
+            opacity: 0,
+            duration: 2,
+            borderRadius: "100%",
+            ease: "power1.in",
+
+            scrollTrigger: {
+              trigger: c,
+              end: "bottom bottom",
+              scrub: 1,
+            },
+          });
+        } else {
+          gsap.from(c, {
+            opacity: 0,
+            duration: 2,
+            ease: "power1.in",
+
+            scrollTrigger: {
+              trigger: c,
+              end: "bottom bottom",
+              scrub: 1,
+            },
+          });
+        }
+      });
     });
   }
 
@@ -91,8 +120,8 @@ class App implements App {
     });
 
     tl.from("#navbar", { opacity: 0, delay: 0.5 })
-      .from("#hero-left", { opacity: 0, scale: 0, transformOrigin: "left" })
-      .from("#hero-right", { opacity: 0, scale: 0, transformOrigin: "left" });
+      .from("#hero-left", { opacity: 0 })
+      .from("#hero-right", { opacity: 0 });
   }
 }
 new App();

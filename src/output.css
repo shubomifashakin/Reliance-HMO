@@ -1474,6 +1474,10 @@ video {
   height: 1rem;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -1500,10 +1504,6 @@ video {
 
 .max-w-56 {
   max-width: 14rem;
-}
-
-.flex-none {
-  flex: none;
 }
 
 .flex-shrink {
@@ -2900,6 +2900,11 @@ video {
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-0 {
