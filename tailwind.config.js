@@ -25,12 +25,24 @@ module.exports = {
 
       animation: {
         flash: "flash .5s ease-in-out",
+        slideIn: "slideIn .5s ease-in-out",
+        slideOut: "slideOut .5s ease-in-out",
       },
 
       keyframes: {
         flash: {
           from: { opacity: 0 },
           to: { opacity: 1 },
+        },
+
+        slideIn: {
+          from: { top: "-100%" },
+          to: { top: "100%" },
+        },
+
+        slideOut: {
+          from: { top: "100%" },
+          to: { top: "-100%" },
         },
       },
 

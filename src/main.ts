@@ -18,18 +18,46 @@ function raf(time: number): void {
 requestAnimationFrame(raf);
 
 interface App {
-  section2: Element | null;
   fadeInElementsFn(): void;
   heroAnimation(): void;
 }
 
 class App implements App {
   fadeInEls = document.querySelectorAll(".fadeIn");
+  hamburgerIcon = document.querySelector("#hamburger-icon");
+  dropdown = document.querySelector("#dropdown");
+  dropdownOverlay = document.querySelector("#dropdown-overlay");
+  stickyNav = document.querySelector("#sticky-nav");
+  navbar = document.querySelector("#navbar");
 
   constructor() {
     this.fadeInElementsFn();
 
     this.heroAnimation();
+
+    this.hamburgerIcon?.addEventListener("click", () => {
+      const tl = gsap.timeline({ defaults: { duration: 0.7 } });
+
+      tl.to(this.dropdownOverlay, { opacity: 1, display: "block" }).fromTo(
+        this.dropdown,
+        { top: "-100%" },
+        {
+          top: this.navbar?.clientHeight + this.stickyNav?.clientHeight + "px",
+          display: "block",
+        },
+        "<",
+      );
+    });
+
+    this.dropdownOverlay?.addEventListener("click", () => {
+      const tl = gsap.timeline({ defaults: { duration: 1 } });
+
+      tl.to(this.dropdownOverlay, { opacity: 0, display: "none" }).to(
+        this.dropdown,
+        { top: "-100%", display: "none" },
+        "<",
+      );
+    });
   }
 
   fadeInElementsFn(): void {

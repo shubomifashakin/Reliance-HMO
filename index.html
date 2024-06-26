@@ -43,7 +43,8 @@
   <body>
     <div id="app">
       <div
-        class="sticky top-0 z-50 flex w-full items-center justify-start gap-x-1.5 text-nowrap bg-relianceDarkBlue px-3 py-3 text-center text-sm text-white lg:justify-center"
+        id="sticky-nav"
+        class="sticky top-0 z-50 flex w-full items-center justify-start gap-x-1.5 overflow-hidden text-nowrap bg-relianceDarkBlue px-3 py-3 text-center text-sm text-white lg:justify-center"
       >
         <span
           class="inline-block rounded-full bg-secondaryGreen px-2.5 py-0.5 text-xs uppercase"
@@ -69,54 +70,92 @@
         </svg>
       </div>
 
+      <div
+        id="dropdown-overlay"
+        class="fixed left-0 top-0 z-[100] hidden h-full w-full bg-black bg-opacity-65 opacity-0 lg:!hidden"
+      >
+        <div
+          id="dropdown"
+          class="absolute left-0 z-[100] hidden w-full space-y-12 rounded-2xl bg-white px-4 py-4 lg:!hidden"
+        >
+          <ul class="space-y-4 font-semibold">
+            <li class="py-3">
+              <a href="#" class="nav-link">Company</a>
+            </li>
+
+            <li class="py-3">
+              <a href="#" class="nav-link">Plans</a>
+            </li>
+
+            <li class="py-3">
+              <a href="#" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+
+          <button
+            type="button"
+            title="Get A Quote"
+            class="primary-btn w-full ring-0"
+          >
+            Get A Quote
+          </button>
+        </div>
+      </div>
+
       <section
         id="section-1"
-        class="overflow-hidden rounded-b-3xl bg-relianceDarkBlue"
+        class="relative overflow-hidden rounded-b-3xl bg-relianceDarkBlue"
       >
         <div
           class="flex w-full flex-col space-y-5 rounded-3xl bg-section-gradient lg:space-y-16 lg:px-24 lg:pb-12 2xl:px-32"
         >
-          <nav
-            id="navbar"
-            class="relative flex w-full justify-between px-4 py-6 text-relianceDarkBlue lg:px-0"
-          >
-            <div class="flex items-center gap-x-16">
-              <ul>
+          <nav id="navbar" class="relative py-6 text-relianceDarkBlue">
+            <div class="flex w-full items-center justify-between px-4 lg:px-0">
+              <div class="flex items-center gap-x-16">
+                <ul>
+                  <li>
+                    <img
+                      src="./src/assets/images/image 1.png"
+                      class="aspect-video"
+                      alt="brand logo"
+                    />
+                  </li>
+                </ul>
+
+                <ul class="hidden items-center gap-x-5 font-semibold lg:flex">
+                  <li>
+                    <a href="#" class="nav-link">Company</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="nav-link">Plans</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="nav-link">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+
+              <ul class="hidden items-center gap-x-6 font-semibold lg:flex">
                 <li>
-                  <img
-                    src="./src/assets/images/image 1.png"
-                    class="aspect-video"
-                    alt="brand logo"
-                  />
+                  <a href="#" class="nav-link">Login</a>
+                </li>
+
+                <li>
+                  <button type="button" title="Get A Quote" class="primary-btn">
+                    Get A Quote
+                  </button>
                 </li>
               </ul>
 
-              <ul class="hidden items-center gap-x-5 font-semibold lg:flex">
-                <li>
-                  <a href="#" class="nav-link">Company</a>
-                </li>
-
-                <li>
-                  <a href="#" class="nav-link">Plans</a>
-                </li>
-
-                <li>
-                  <a href="#" class="nav-link">Contact Us</a>
-                </li>
-              </ul>
+              <img
+                id="hamburger-icon"
+                src="./src/assets/svgs/hamburger.svg"
+                alt="hamburger"
+                class="h-4 cursor-pointer lg:hidden"
+              />
             </div>
-
-            <ul class="hidden items-center gap-x-6 font-semibold lg:flex">
-              <li>
-                <a href="#" class="nav-link">Login</a>
-              </li>
-
-              <li>
-                <button type="button" title="Get A Quote" class="primary-btn">
-                  Get A Quote
-                </button>
-              </li>
-            </ul>
           </nav>
 
           <main
@@ -128,7 +167,7 @@
             >
               <div class="order-1 space-y-5 px-1 lg:px-0">
                 <h2
-                  class="bg-text-gradient bg-clip-text text-3.5xl font-bold text-transparent lg:text-4xl lg:leading-[4rem] xl:text-5xl"
+                  class="text-3.5xl bg-text-gradient bg-clip-text font-bold text-transparent lg:text-4xl lg:leading-[4rem] xl:text-5xl"
                 >
                   The next-generation <br />
                   HMO for business
@@ -336,7 +375,7 @@
                 <img
                   loading="lazy"
                   alt="employees"
-                  class="relative z-50 aspect-video object-contain"
+                  class="relative z-10 aspect-video object-contain"
                   src="./src/assets/images/image4.png"
                 />
                 <img
@@ -873,10 +912,10 @@
 
       <footer
         id="section-7"
-        class="lg:text-bas relative flex flex-col overflow-hidden text-sm"
+        class="relative flex flex-col overflow-hidden text-sm lg:text-base"
       >
         <div
-          class="relative flex flex-col items-center justify-center space-y-5 px-2 py-12"
+          class="relative flex flex-col items-center justify-center space-y-5 px-2 py-20"
         >
           <h2
             class="fadeIn text-center text-2xl font-bold text-relianceDarkBlue lg:text-4xl"
@@ -1007,53 +1046,17 @@
           </div>
         </div>
 
-        <svg
-          width="305"
-          height="460"
-          viewBox="0 0 305 460"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="min-w pointer-events-none absolute -top-32 left-0"
-        >
-          <path
-            d="M304.003 229.25C304.003 234.789 302.912 240.274 300.792 245.392C298.673 250.509 295.566 255.159 291.649 259.076C287.732 262.993 283.082 266.1 277.965 268.22C272.847 270.339 267.362 271.43 261.823 271.43H77.6919C72.1527 271.43 66.6677 270.339 61.5501 268.22C56.4325 266.1 51.7826 262.993 47.8658 259.076C43.949 255.159 40.842 250.509 38.7222 245.392C36.6024 240.274 35.5114 234.789 35.5114 229.25V45.7416C35.162 39.9972 35.9917 34.2422 37.9496 28.8305C39.9074 23.4189 42.952 18.4651 46.8958 14.274C50.8397 10.083 55.5995 6.74327 60.8823 4.46045C66.1651 2.17764 71.8591 1 77.6141 1C83.369 1 89.063 2.17764 94.3458 4.46045C99.6286 6.74327 104.388 10.083 108.332 14.274C112.276 18.4651 115.321 23.4189 117.279 28.8305C119.236 34.2422 120.066 39.9972 119.717 45.7416V187.692H261.823C272.903 187.691 283.538 192.049 291.431 199.825C299.324 207.602 303.84 218.171 304.003 229.25Z"
-            stroke="#009DF5"
-            stroke-opacity="0.2"
-            stroke-width="2"
-            stroke-miterlimit="10"
-          />
-          <path
-            d="M-148 229.252C-147.959 218.092 -143.496 207.403 -135.59 199.526C-127.685 191.649 -116.979 187.227 -105.819 187.227H77.6891C83.2674 187.144 88.8066 188.169 93.9861 190.243C99.1655 192.316 103.882 195.396 107.863 199.304C111.844 203.213 115.01 207.872 117.178 213.013C119.346 218.153 120.472 223.673 120.492 229.252V413.538C120.842 419.282 120.012 425.038 118.054 430.449C116.096 435.861 113.052 440.815 109.108 445.006C105.164 449.197 100.404 452.536 95.1213 454.819C89.8385 457.102 84.1444 458.28 78.3895 458.28C72.6346 458.28 66.9405 457.102 61.6577 454.819C56.3749 452.536 51.6151 449.197 47.6713 445.006C43.7274 440.815 40.6828 435.861 38.725 430.449C36.7672 425.038 35.9374 419.282 36.2869 413.538V271.588H-105.819C-111.372 271.588 -116.869 270.492 -121.997 268.362C-127.125 266.233 -131.782 263.112 -135.701 259.178C-139.619 255.245 -142.723 250.577 -144.834 245.441C-146.944 240.306 -148.02 234.804 -148 229.252Z"
-            stroke="#009DF5"
-            stroke-opacity="0.2"
-            stroke-width="2"
-            stroke-miterlimit="10"
-          />
-        </svg>
+        <img
+          src="./src/assets/svgs/footersvg.svg"
+          alt="svg"
+          class="pointer-events-none absolute -top-20 left-0 max-w-44 lg:max-w-56"
+        />
 
-        <svg
-          width="305"
-          height="460"
-          viewBox="0 0 305 460"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 rotate-180"
-        >
-          <path
-            d="M304.003 229.25C304.003 234.789 302.912 240.274 300.792 245.392C298.673 250.509 295.566 255.159 291.649 259.076C287.732 262.993 283.082 266.1 277.965 268.22C272.847 270.339 267.362 271.43 261.823 271.43H77.6919C72.1527 271.43 66.6677 270.339 61.5501 268.22C56.4325 266.1 51.7826 262.993 47.8658 259.076C43.949 255.159 40.842 250.509 38.7222 245.392C36.6024 240.274 35.5114 234.789 35.5114 229.25V45.7416C35.162 39.9972 35.9917 34.2422 37.9496 28.8305C39.9074 23.4189 42.952 18.4651 46.8958 14.274C50.8397 10.083 55.5995 6.74327 60.8823 4.46045C66.1651 2.17764 71.8591 1 77.6141 1C83.369 1 89.063 2.17764 94.3458 4.46045C99.6286 6.74327 104.388 10.083 108.332 14.274C112.276 18.4651 115.321 23.4189 117.279 28.8305C119.236 34.2422 120.066 39.9972 119.717 45.7416V187.692H261.823C272.903 187.691 283.538 192.049 291.431 199.825C299.324 207.602 303.84 218.171 304.003 229.25Z"
-            stroke="#009DF5"
-            stroke-opacity="0.2"
-            stroke-width="2"
-            stroke-miterlimit="10"
-          />
-          <path
-            d="M-148 229.252C-147.959 218.092 -143.496 207.403 -135.59 199.526C-127.685 191.649 -116.979 187.227 -105.819 187.227H77.6891C83.2674 187.144 88.8066 188.169 93.9861 190.243C99.1655 192.316 103.882 195.396 107.863 199.304C111.844 203.213 115.01 207.872 117.178 213.013C119.346 218.153 120.472 223.673 120.492 229.252V413.538C120.842 419.282 120.012 425.038 118.054 430.449C116.096 435.861 113.052 440.815 109.108 445.006C105.164 449.197 100.404 452.536 95.1213 454.819C89.8385 457.102 84.1444 458.28 78.3895 458.28C72.6346 458.28 66.9405 457.102 61.6577 454.819C56.3749 452.536 51.6151 449.197 47.6713 445.006C43.7274 440.815 40.6828 435.861 38.725 430.449C36.7672 425.038 35.9374 419.282 36.2869 413.538V271.588H-105.819C-111.372 271.588 -116.869 270.492 -121.997 268.362C-127.125 266.233 -131.782 263.112 -135.701 259.178C-139.619 255.245 -142.723 250.577 -144.834 245.441C-146.944 240.306 -148.02 234.804 -148 229.252Z"
-            stroke="#009DF5"
-            stroke-opacity="0.2"
-            stroke-width="2"
-            stroke-miterlimit="10"
-          />
-        </svg>
+        <img
+          src="./src/assets/svgs/footersvg.svg"
+          alt="svg"
+          class="pointer-events-none absolute right-0 top-1/2 max-w-44 -translate-y-1/2 rotate-180 lg:max-w-56"
+        />
       </footer>
     </div>
     <script type="module" src="/src/main.ts"></script>

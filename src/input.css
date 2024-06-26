@@ -41,6 +41,18 @@ body {
   font-family: "Proxima Nova", sans-serif;
 }
 
+.active {
+  @apply !block animate-flash;
+}
+
+.polive {
+  @apply animate-slideIn !block;
+}
+
+.dropdownHidden {
+  @apply animate-slideOut !hidden;
+}
+
 @layer components {
   .nav-link {
     @apply transition-colors duration-300 hover:text-relianceLightBlue active:text-relianceLightBlue;
