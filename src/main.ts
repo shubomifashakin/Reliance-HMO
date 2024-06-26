@@ -42,7 +42,10 @@ class App implements App {
         this.dropdown,
         { top: "-100%" },
         {
-          top: this.navbar?.clientHeight + this.stickyNav?.clientHeight + "px",
+          top:
+            this.navbar && this.stickyNav
+              ? this.navbar.clientHeight + this.stickyNav?.clientHeight + "px"
+              : "150px",
           display: "block",
         },
         "<",
