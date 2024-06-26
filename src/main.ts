@@ -62,7 +62,7 @@ class App implements App {
 
   fadeInElementsFn(): void {
     this.fadeInEls?.forEach((c): void => {
-      let mm = gsap.matchMedia();
+      // let mm = gsap.matchMedia();
 
       // mm.add("(min-width: 1024px)", () => {
       gsap.from(c, {

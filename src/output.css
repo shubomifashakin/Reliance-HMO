@@ -1155,10 +1155,6 @@ video {
   top: -5rem;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .bottom-4 {
   bottom: 1rem;
 }
@@ -1179,14 +1175,6 @@ video {
   right: 0px;
 }
 
-.right-32 {
-  right: 8rem;
-}
-
-.right-5 {
-  right: 1.25rem;
-}
-
 .start-1 {
   inset-inline-start: 0.25rem;
 }
@@ -1205,6 +1193,10 @@ video {
 
 .isolation-auto {
   isolation: auto;
+}
+
+.-z-10 {
+  z-index: -10;
 }
 
 .z-10 {
@@ -1454,6 +1446,10 @@ video {
   display: none;
 }
 
+.aspect-\[9\/11\] {
+  aspect-ratio: 9/11;
+}
+
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
@@ -1468,6 +1464,10 @@ video {
 
 .h-2 {
   height: 0.5rem;
+}
+
+.h-3\/4 {
+  height: 75%;
 }
 
 .h-4 {
@@ -2179,6 +2179,12 @@ video {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 1;
 }
@@ -2503,6 +2509,10 @@ video {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .rounded-b {
@@ -3815,8 +3825,16 @@ details > summary::-webkit-details-marker {
     position: absolute;
   }
 
-  .lg\:bottom-8 {
-    bottom: 2rem;
+  .lg\:bottom-10 {
+    bottom: 2.5rem;
+  }
+
+  .lg\:left-0 {
+    left: 0px;
+  }
+
+  .lg\:left-24 {
+    left: 6rem;
   }
 
   .lg\:order-2 {
@@ -3855,12 +3873,12 @@ details > summary::-webkit-details-marker {
     display: none;
   }
 
-  .lg\:basis-1\/2 {
-    flex-basis: 50%;
+  .lg\:h-full {
+    height: 100%;
   }
 
-  .lg\:basis-\[41\%\] {
-    flex-basis: 41%;
+  .lg\:basis-1\/2 {
+    flex-basis: 50%;
   }
 
   .lg\:animate-none {
@@ -3926,6 +3944,14 @@ details > summary::-webkit-details-marker {
     margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
+  .lg\:overflow-auto {
+    overflow: auto;
+  }
+
+  .lg\:overflow-visible {
+    overflow: visible;
+  }
+
   .lg\:rounded-b-2xl {
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -3943,6 +3969,11 @@ details > summary::-webkit-details-marker {
   .lg\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .lg\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   .lg\:py-12 {
