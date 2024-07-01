@@ -1446,6 +1446,34 @@ video {
   display: none;
 }
 
+.aspect-\[1\.27\/1\] {
+  aspect-ratio: 1.27/1;
+}
+
+.aspect-\[1\.57\/1\] {
+  aspect-ratio: 1.57/1;
+}
+
+.aspect-\[1\.72\/1\] {
+  aspect-ratio: 1.72/1;
+}
+
+.aspect-\[1\.76\/1\] {
+  aspect-ratio: 1.76/1;
+}
+
+.aspect-\[2\.23\/1\] {
+  aspect-ratio: 2.23/1;
+}
+
+.aspect-\[2\/3\] {
+  aspect-ratio: 2/3;
+}
+
+.aspect-\[3\/2\] {
+  aspect-ratio: 3/2;
+}
+
 .aspect-\[9\/11\] {
   aspect-ratio: 9/11;
 }
@@ -1456,34 +1484,6 @@ video {
 
 .aspect-video {
   aspect-ratio: 16 / 9;
-}
-
-.aspect-\[1\.27\/1\] {
-  aspect-ratio: 1.27/1;
-}
-
-.aspect-\[2\.23\/1\] {
-  aspect-ratio: 2.23/1;
-}
-
-.aspect-\[video\] {
-  aspect-ratio: video;
-}
-
-.aspect-\[1\.76\/1\] {
-  aspect-ratio: 1.76/1;
-}
-
-.aspect-\[1\.72\/1\] {
-  aspect-ratio: 1.72/1;
-}
-
-.aspect-\[1\.57\/1\] {
-  aspect-ratio: 1.57/1;
-}
-
-.aspect-\[1\.5\/1\] {
-  aspect-ratio: 1.5/1;
 }
 
 .h-1 {
