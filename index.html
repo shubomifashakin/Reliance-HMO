@@ -1,14 +1,25 @@
 <!doctype html>
-<html lang="en" class="overflow-hidden">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
 
-    <meta name="description" content="HealthCare for All Businesses" />
+    <meta
+      name="description"
+      content="Enhance productivity with tailored healthcare solutions for businesses. Explore our wellness programs and medical services today."
+    />
+    <meta
+      name="description"
+      content="Enhance productivity with tailored healthcare solutions for businesses. Explore our wellness programs and medical services today."
+    />
 
     <meta property="og:title" content="Reliance HMO" />
 
     <!-- prettier-ignore -->
-    <meta property="og:description" content="HealthCare for All Businesses" />
+    <meta property="og:description" content="Enhance productivity with tailored healthcare solutions for businesses. Explore our wellness programs and medical services today." />
+    <meta
+      property="og:description"
+      content="Enhance productivity with tailored healthcare solutions for businesses. Explore our wellness programs and medical services today."
+    />
     <!-- prettier-ignore -->
     <meta property="og:image" content="https://res.cloudinary.com/dnrafo7kc/image/upload/v1718756491/jzw0eri2asvgnluode7i.png" />
 
@@ -23,18 +34,22 @@
     <meta name="twitter:url" content="https://reliancehmo.netlify.app/" />
     <meta name="twitter:title" content="Reliance HMO: Business HealthCare" />
     <!-- prettier-ignore -->
-    <meta name="twitter:description" content="HealthCare for All Businesses" />
+    <meta name="twitter:description" content="Enhance productivity with tailored healthcare solutions for businesses. Explore our wellness programs and medical services today." />
+    <meta
+      name="twitter:description"
+      content="Enhance productivity with tailored healthcare solutions for businesses. Explore our wellness programs and medical services today."
+    />
     <!-- prettier-ignore -->
-    <meta property="twitter:description" content="HealthCare for All Businesses" />
+    <meta property="twitter:description" content="Enhance productivity with tailored healthcare solutions for businesses. Explore our wellness programs and medical services today." />
+    <meta
+      property="twitter:description"
+      content="Enhance productivity with tailored healthcare solutions for businesses. Explore our wellness programs and medical services today."
+    />
     <!-- prettier-ignore -->
     <meta property="twitter:image" content="https://res.cloudinary.com/dnrafo7kc/image/upload/v1718756491/jzw0eri2asvgnluode7i.png" />
 
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="./src/output.css" />
-    <link
-      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
-      rel="stylesheet"
-    />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reliance HMO</title>
@@ -43,90 +58,179 @@
   <body>
     <div id="app">
       <div
-        class="sticky top-0 z-50 flex w-full items-center justify-center gap-x-1.5 bg-relianceDarkBlue py-3 text-sm text-white"
+        id="sticky-nav"
+        class="sticky top-0 z-50 flex w-full overflow-hidden bg-relianceDarkBlue px-3 py-3 text-center text-sm text-white lg:justify-center"
       >
-        <span
-          class="inline-block rounded-full bg-secondaryGreen px-2.5 py-0.5 text-xs uppercase"
-          >New</span
-        >Brand Revamp: Introducing a new brand look and feel, with no
-        interruption to your experience
-
-        <svg
-          width="17"
-          height="16"
-          viewBox="0 0 17 16"
-          fill="#fc3"
-          xmlns="http://www.w3.org/2000/svg"
+        <div
+          class="flex animate-slideLeft items-center justify-start gap-x-1.5 text-nowrap lg:animate-none lg:justify-center"
         >
-          <path
-            d="M11.2785 7.33327L7.70246 3.75726L8.64526 2.81445L13.8307 7.99993L8.64526 13.1853L7.70246 12.2425L11.2785 8.6666H3.16406V7.33327H11.2785Z"
-            fill="white"
-          />
-        </svg>
+          <div
+            class="flex flex-shrink-0 flex-nowrap items-center justify-start gap-x-1.5 text-nowrap"
+          >
+            <span
+              class="inline-block rounded-full bg-secondaryGreen px-2.5 py-0.5 text-xs uppercase"
+              >New</span
+            >
+
+            <p>
+              Brand Revamp: Introducing a new brand look and feel, with no
+              interruption to your experience
+            </p>
+
+            <svg
+              width="17"
+              height="16"
+              viewBox="0 0 17 16"
+              fill="#fc3"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.2785 7.33327L7.70246 3.75726L8.64526 2.81445L13.8307 7.99993L8.64526 13.1853L7.70246 12.2425L11.2785 8.6666H3.16406V7.33327H11.2785Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+          <div
+            class="flex flex-shrink-0 flex-nowrap items-center justify-start gap-x-1.5 text-nowrap lg:hidden"
+          >
+            <span
+              class="inline-block rounded-full bg-secondaryGreen px-2.5 py-0.5 text-xs uppercase"
+              >New</span
+            >
+
+            <p>
+              Brand Revamp: Introducing a new brand look and feel, with no
+              interruption to your experience
+            </p>
+
+            <svg
+              width="17"
+              height="16"
+              viewBox="0 0 17 16"
+              fill="#fc3"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.2785 7.33327L7.70246 3.75726L8.64526 2.81445L13.8307 7.99993L8.64526 13.1853L7.70246 12.2425L11.2785 8.6666H3.16406V7.33327H11.2785Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
 
-      <section id="section-1" class="bg-relianceDarkBlue">
+      <div
+        id="dropdown-overlay"
+        class="fixed left-0 top-0 z-[100] hidden h-full w-full bg-black bg-opacity-65 opacity-0 lg:!hidden"
+      >
         <div
-          class="flex w-full flex-col justify-between space-y-16 rounded-t-3xl bg-section-gradient pb-12 lg:px-24 2xl:px-32"
+          id="dropdown"
+          class="absolute left-0 z-[100] hidden w-full space-y-12 rounded-2xl bg-white px-4 py-4"
         >
-          <nav
-            id="navbar"
-            class="relative flex w-full justify-between py-6 text-relianceDarkBlue"
+          <ul class="space-y-3 font-semibold">
+            <li class="py-3">
+              <a href="#" class="nav-link">Company</a>
+            </li>
+
+            <li class="py-3">
+              <a href="#" class="nav-link">Plans</a>
+            </li>
+
+            <li class="py-3">
+              <a href="#" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+
+          <button
+            type="button"
+            title="Get A Quote"
+            class="primary-btn w-full ring-0"
           >
-            <div class="flex items-center gap-x-16">
-              <ul>
+            Get A Quote
+          </button>
+        </div>
+      </div>
+
+      <section
+        id="section-1"
+        class="relative overflow-hidden rounded-b-3xl bg-relianceDarkBlue"
+      >
+        <div
+          class="flex w-full flex-col space-y-5 rounded-3xl bg-section-gradient lg:space-y-16 lg:px-24 lg:pb-12 2xl:px-32"
+        >
+          <nav id="navbar" class="relative py-6 text-relianceDarkBlue">
+            <div class="flex w-full items-center justify-between px-7 lg:px-0">
+              <div class="flex items-center gap-x-16">
+                <ul>
+                  <li>
+                    <img
+                      src="./src/assets/images/image 1.webp"
+                      src="./src/assets/images/image 1.webp"
+                      class="aspect-video"
+                      alt="brand logo"
+                    />
+                  </li>
+                </ul>
+
+                <ul class="hidden items-center gap-x-5 font-semibold lg:flex">
+                  <li>
+                    <a href="#" class="nav-link">Company</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="nav-link">Plans</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="nav-link">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+
+              <ul class="hidden items-center gap-x-6 font-semibold lg:flex">
                 <li>
-                  <img
-                    src="./src/assets/images/image 1.png"
-                    class="aspect-video"
-                    alt="brand logo"
-                  />
+                  <a href="#" class="nav-link">Login</a>
+                </li>
+
+                <li>
+                  <button type="button" title="Get A Quote" class="primary-btn">
+                    Get A Quote
+                  </button>
                 </li>
               </ul>
 
-              <ul class="hidden items-center gap-x-5 font-semibold lg:flex">
-                <li>
-                  <a href="#" class="nav-link">Company</a>
-                </li>
-
-                <li>
-                  <a href="#" class="nav-link">Plans</a>
-                </li>
-
-                <li>
-                  <a href="#" class="nav-link">Contact Us</a>
-                </li>
-              </ul>
+              <img
+                id="hamburger-icon"
+                src="./src/assets/svgs/hamburger.svg"
+                alt="hamburger"
+                class="h-5 cursor-pointer lg:hidden"
+              />
             </div>
-
-            <ul class="hidden items-center gap-x-6 font-semibold lg:flex">
-              <li>
-                <a href="#" class="nav-link">Login</a>
-              </li>
-
-              <li>
-                <button type="button" title="Get A Quote" class="primary-btn">
-                  Get A Quote
-                </button>
-              </li>
-            </ul>
           </nav>
 
           <main
-            class="relative flex w-full items-end gap-x-2 text-relianceDarkBlue"
+            class="relative flex w-full flex-col items-end gap-x-2 px-4 text-relianceDarkBlue lg:flex-row lg:px-0"
           >
-            <div id="hero-left" class="basis-full space-y-24 lg:basis-1/2">
-              <div class="space-y-5">
+            <div
+              id="hero-left"
+              class="flex flex-col space-y-5 lg:block lg:basis-1/2 lg:space-y-24"
+            >
+              <div class="order-1 space-y-5 px-1 lg:px-0">
                 <h2
-                  class="bg-text-gradient bg-clip-text text-4xl font-bold text-transparent lg:text-4xl lg:leading-[4rem] xl:text-5xl"
+                  class="bg-text-gradient bg-clip-text text-3.5xl font-bold text-transparent lg:text-4xl lg:leading-[4rem] xl:text-5xl"
                 >
                   The next-generation <br />
                   HMO for business
                 </h2>
 
-                <p class="font-normal">
-                  We're reimagining employee healthcare by leveraging<br />
-                  technology to make healthcare affordable, accessible and<br />
+                <p class="text-sm font-normal lg:text-base">
+                  We're reimagining employee healthcare by leveraging<br
+                    class="hidden lg:block"
+                  />
+                  technology to make healthcare affordable, accessible and<br
+                    class="hidden lg:block"
+                  />
                   delightful for businesses in Nigeria.
                 </p>
 
@@ -135,42 +239,93 @@
                 </button>
               </div>
 
-              <div>
-                <h2 class="mb-4 font-semibold capitalize">
+              <div class="order-3 lg:order-2">
+                <h2
+                  class="text-center font-semibold capitalize lg:mb-4 lg:text-left"
+                >
                   Trusted By Over 1600 businesses
                 </h2>
 
-                <div class="flex items-end gap-x-6">
-                  <div>
+                <div
+                  class="flex items-center justify-center gap-x-3 px-6 lg:justify-start lg:gap-x-4 lg:px-0"
+                >
+                  <div class="logo-container">
                     <img
                       src="./src/assets/svgs/shell.svg"
                       class="aspect-video"
-                      alt="Image description."
+                      alt="Shell Logo."
                     />
                   </div>
 
-                  <div>
+                  <div class="logo-container">
                     <img
                       src="./src/assets/svgs/remita.svg"
                       class="aspect-square"
-                      alt="Image description."
+                      alt="Remita Logo."
                     />
                   </div>
 
-                  <div>
+                  <div class="logo-container">
                     <img
                       src="./src/assets/svgs/mtn.svg"
                       class="aspect-square"
-                      alt="Image description."
+                      alt="Mtn logo."
                     />
                   </div>
 
-                  <div>
+                  <div class="logo-container">
                     <img
                       src="./src/assets/svgs/paystack.svg"
                       class="aspect-square"
-                      alt="Image description."
+                      alt="Paystack Logo."
                     />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="relative order-2 w-full overflow-hidden rounded-2xl border-[.5rem] border-white border-opacity-70 lg:hidden"
+              >
+                <img
+                  src="./src/assets/images/hero image.webp"
+                  src="./src/assets/images/hero image.webp"
+                  class="aspect-[1.27/1] blur-[100%] backdrop-blur-xl"
+                  alt="hero image"
+                />
+
+                <div
+                  class="absolute left-0 top-0 h-full w-full bg-relianceDarkBlue bg-opacity-40 mix-blend-darken"
+                ></div>
+
+                <div
+                  class="absolute bottom-4 left-0 flex w-full items-center justify-normal gap-x-2.5 px-4 text-white"
+                >
+                  <button
+                    title="Play Video"
+                    type="button"
+                    class="group flex items-center justify-center rounded-full bg-white p-2.5 transition-colors duration-300 ease-in-out hover:bg-relianceDarkBlue active:bg-relianceDarkBlue"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 12 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.376 8.4161L0.77735 15.4818C0.54759 15.635 0.23715 15.5729 0.0839701 15.3432C0.0292201 15.261 0 15.1645 0 15.0658V0.934326C0 0.658176 0.22386 0.434326 0.5 0.434326C0.59871 0.434326 0.69522 0.463546 0.77735 0.518296L11.376 7.584C11.6057 7.7372 11.6678 8.0477 11.5146 8.2774C11.478 8.3323 11.4309 8.3795 11.376 8.4161Z"
+                        fill="#009DF5"
+                        class="transition-colors duration-300 ease-in-out group-hover:fill-white group-active:fill-white"
+                      />
+                    </svg>
+                  </button>
+
+                  <div class="space-y-1">
+                    <h1 class="text-sm font-semibold">Play this video</h1>
+
+                    <p class="text-xs">
+                      To see how we are powering next-generation businesses
+                    </p>
                   </div>
                 </div>
               </div>
@@ -184,8 +339,9 @@
                 class="relative w-full overflow-hidden rounded-2xl border-[.5rem] border-white border-opacity-70"
               >
                 <img
-                  src="./src/assets/images/hero image.jpg"
-                  class="rounded-lg blur-[100%] backdrop-blur-xl"
+                  src="./src/assets/images/hero image.webp"
+                  src="./src/assets/images/hero image.webp"
+                  class="aspect-[1.27/1] blur-[100%] backdrop-blur-xl"
                   alt="hero image"
                 />
 
@@ -194,7 +350,7 @@
                 ></div>
 
                 <div
-                  class="absolute bottom-8 left-8 flex items-center justify-center gap-x-3 text-white"
+                  class="absolute bottom-8 left-0 flex w-full items-center justify-normal gap-x-3 px-2 text-white"
                 >
                   <button
                     title="Play Video"
@@ -229,31 +385,32 @@
         </div>
       </section>
 
-      <section id="section-2" class="py-20">
-        <div id="section-2-inner-1" class="space-y-6 px-4 text-center lg:px-0">
+      <section id="section-2" class="px-5 py-10 lg:px-0 lg:py-20">
+        <div id="section-2-inner-1" class="space-y-6 text-center lg:px-0">
           <h2
-            class="fadeIn text-4xl font-bold text-relianceDarkBlue lg:text-4xl"
+            class="fadeIn text-2xl font-bold text-relianceDarkBlue lg:text-4xl"
           >
             Designed to make high quality healthcare
             <br class="hidden lg:block" />
             delightful, affordable and accessible.
           </h2>
 
-          <p class="fadeIn text-lg">
+          <p class="fadeIn px-7 text-sm lg:px-0 lg:text-lg">
             Bringing healthcare to you and avoid the usual stressful healthcare
             system.
           </p>
         </div>
 
-        <div class="px-12 lg:px-24 2xl:px-32">
-          <div id="section-2-inner-2" class="inner mt-16">
+        <div class="mt-8 lg:mt-16 lg:px-24 2xl:px-32">
+          <div id="section-2-inner-2" class="inner">
             <div class="inner-2-div fadeIn">
               <div class="image-container">
                 <img
                   loading="lazy"
                   alt="employees"
-                  class="aspect-video object-contain"
-                  src="./src/assets/images/image3.png"
+                  class="aspect-[2.23/1] object-contain"
+                  src="./src/assets/images/image3.webp"
+                  src="./src/assets/images/image3.webp"
                 />
               </div>
 
@@ -272,12 +429,14 @@
                 <img
                   loading="lazy"
                   alt="employees"
-                  class="relative z-50 aspect-video object-contain"
-                  src="./src/assets/images/image4.png"
+                  class="relative z-10 aspect-[2.23/1] object-contain"
+                  src="./src/assets/images/image4.webp"
+                  src="./src/assets/images/image4.webp"
                 />
                 <img
                   loading="lazy"
-                  src="./src/assets/images/dots.png"
+                  src="./src/assets/images/dots.webp"
+                  src="./src/assets/images/dots.webp"
                   alt="overlay"
                   class="absolute left-0 top-0 z-10"
                 />
@@ -301,13 +460,15 @@
               >
                 <img
                   loading="lazy"
-                  class="relative z-50 aspect-video object-contain"
+                  class="relative z-50 aspect-[1.76/1] object-contain"
                   alt="image"
-                  src="./src/assets/images/image5.png"
+                  src="./src/assets/images/image5.webp"
+                  src="./src/assets/images/image5.webp"
                 />
                 <img
                   loading="lazy"
-                  src="./src/assets/images/dots.png"
+                  src="./src/assets/images/dots.webp"
+                  src="./src/assets/images/dots.webp"
                   alt="overlay"
                   class="absolute left-0 top-0 z-10"
                 />
@@ -328,9 +489,10 @@
               <div class="flex items-center justify-center">
                 <img
                   loading="lazy"
-                  class="aspect-video object-contain"
+                  class="aspect-[1.72/1] object-contain"
                   alt="image"
-                  src="./src/assets/images/image6.png"
+                  src="./src/assets/images/image6.webp"
+                  src="./src/assets/images/image6.webp"
                 />
               </div>
 
@@ -350,9 +512,10 @@
               <div class="flex items-center justify-center">
                 <img
                   loading="lazy"
-                  class="aspect-video object-contain"
+                  class="aspect-[1.57/1] object-contain"
                   alt="image"
-                  src="./src/assets/images/image7.png"
+                  src="./src/assets/images/image7.webp"
+                  src="./src/assets/images/image7.webp"
                 />
               </div>
 
@@ -371,15 +534,17 @@
 
       <section
         id="section-3"
-        class="flex flex-col items-end gap-14 bg-cream px-12 py-16 lg:flex-row lg:px-24 2xl:px-32"
+        class="flex flex-col items-end gap-x-14 gap-y-6 bg-cream px-5 py-10 lg:flex-row lg:px-24 lg:py-16 2xl:px-32"
       >
-        <div id="section-3-inner-1" class="basis-1/2 space-y-12">
-          <div class="space-y-4">
-            <h2 class="fadeIn text-4xl font-bold text-relianceDarkBlue">
+        <div id="section-3-inner-1" class="basis-1/2 space-y-8 lg:space-y-12">
+          <div class="space-y-2 lg:space-y-4">
+            <h2
+              class="fadeIn text-2xl font-bold text-relianceDarkBlue lg:text-4xl"
+            >
               Less paper, more speed
             </h2>
 
-            <p class="fadeIn pr-28 text-lg">
+            <p class="fadeIn text-sm lg:pr-28 lg:text-lg">
               Onboard your team within minutes, no matter the size and meet your
               dedicated Customer Representative who’s there for you every step
               of the way.
@@ -392,7 +557,7 @@
                 <span class="span-no"> 1 </span>
               </div>
 
-              <div class="space-y-3">
+              <div class="inner-4-div-texts">
                 <h1 class="inner-4-div-heading">
                   Provide your business details
                 </h1>
@@ -409,7 +574,7 @@
                 <span class="span-no"> 2 </span>
               </div>
 
-              <div class="space-y-3">
+              <div class="inner-4-div-texts">
                 <h1 class="inner-4-div-heading">
                   Get connected with a Customer Representative
                 </h1>
@@ -426,7 +591,7 @@
                 <span class="span-no"> 3 </span>
               </div>
 
-              <div class="space-y-3">
+              <div class="inner-4-div-texts">
                 <h1 class="inner-4-div-heading">Set-up your members</h1>
 
                 <p class="inner-4-div-leading-text">
@@ -440,12 +605,14 @@
 
         <div
           id="section-3-inner-2"
-          class="fadeIn flex h-full basis-1/2 items-end pt-12"
+          class="fadeIn flex h-full basis-1/2 items-end overflow-hidden lg:pt-12"
         >
           <div class="relative overflow-hidden rounded-3xl">
             <img
+              id="headphones"
               loading="lazy"
-              src="./src/assets/images/image8.png"
+              src="./src/assets/images/image8.webp"
+              src="./src/assets/images/image8.webp"
               alt="a man with headphones"
               class="z-10 aspect-square object-cover"
             />
@@ -459,20 +626,24 @@
 
       <section
         id="section-4"
-        class="w-full bg-relianceDarkBlue px-12 py-24 lg:px-24 2xl:px-32"
+        class="w-full space-y-8 bg-relianceDarkBlue px-5 py-10 lg:space-y-16 lg:px-24 2xl:px-32"
       >
-        <h2
-          class="fadeIn bg-text-gradient-green bg-clip-text text-center text-4xl font-bold leading-[4.5rem] text-transparent"
-        >
-          Loved by next-generation businesses
-        </h2>
+        <div class="px-6 lg:p-0">
+          <h2
+            class="fadeIn bg-text-gradient-green bg-clip-text text-center text-2xl font-bold text-transparent lg:text-4xl lg:leading-[4.5rem]"
+          >
+            Loved by next-generation businesses
+          </h2>
 
-        <p class="fadeIn text-center text-lg text-stone-300">
-          Don’t take our words, hear it from businesses that trust<br />
-          our healthcare provider
-        </p>
+          <p class="fadeIn text-center text-sm text-stone-300 lg:text-lg">
+            Don’t take our words, hear it from businesses that trust<br
+              class="hidden lg:block"
+            />
+            our healthcare provider
+          </p>
+        </div>
 
-        <div class="mt-16 grid grid-cols-1 grid-rows-1 gap-4 lg:grid-cols-3">
+        <div class="grid grid-cols-1 grid-rows-1 gap-4 lg:grid-cols-3">
           <div class="testimonial-container">
             <div class="fadeIn testimonial">
               <div class="testimonial-inner-1">
@@ -495,7 +666,8 @@
                   <img
                     loading="lazy"
                     alt="A Customer"
-                    src="./src/assets/images/image9.jpg"
+                    src="./src/assets/images/image9.webp"
+                    src="./src/assets/images/image9.webp"
                     class="testimonial-image"
                   />
                 </div>
@@ -525,7 +697,8 @@
                   <img
                     loading="lazy"
                     alt="A Customer"
-                    src="./src/assets/images/image10.jpg"
+                    src="./src/assets/images/image10.webp"
+                    src="./src/assets/images/image10.webp"
                     class="testimonial-image"
                   />
                 </div>
@@ -557,7 +730,8 @@
                   <img
                     loading="lazy"
                     alt="A Customer"
-                    src="./src/assets/images/image10.jpg"
+                    src="./src/assets/images/image10.webp"
+                    src="./src/assets/images/image10.webp"
                     class="testimonial-image"
                   />
                 </div>
@@ -592,7 +766,8 @@
                   <img
                     loading="lazy"
                     alt="A Customer"
-                    src="./src/assets/images/image9.jpg"
+                    src="./src/assets/images/image9.webp"
+                    src="./src/assets/images/image9.webp"
                     class="testimonial-image"
                   />
                 </div>
@@ -628,7 +803,8 @@
                   <img
                     loading="lazy"
                     alt="A Customer"
-                    src="./src/assets/images/image11.jpg"
+                    src="./src/assets/images/image11.webp"
+                    src="./src/assets/images/image11.webp"
                     class="testimonial-image"
                   />
                 </div>
@@ -656,7 +832,8 @@
                   <img
                     loading="lazy"
                     alt="A Customer"
-                    src="./src/assets/images/image9.jpg"
+                    src="./src/assets/images/image9.webp"
+                    src="./src/assets/images/image9.webp"
                     class="testimonial-image"
                   />
                 </div>
@@ -674,18 +851,20 @@
 
       <section
         id="section-5"
-        class="flex w-full items-center justify-center bg-white px-24 py-32"
+        class="flex w-full items-center justify-center bg-white px-5 py-10 lg:px-40 lg:py-32"
       >
         <div
-          class="relative flex justify-between rounded-2xl bg-relianceLightBlue text-white"
+          class="relative flex flex-col justify-between overflow-hidden rounded-xl bg-relianceLightBlue text-white lg:flex-row lg:overflow-visible"
         >
-          <div class="basis-[41%] space-y-6 py-28 pl-24">
-            <h2 class="text-4xl font-bold">
+          <div
+            class="space-y-2.5 px-6 py-8 lg:basis-1/2 lg:space-y-6 lg:py-28 lg:pl-24"
+          >
+            <h2 class="text-2xl font-bold lg:text-4xl">
               Need Help <br />
               choosing an HMO?
             </h2>
 
-            <p class="text-lg">
+            <p class="text-sm lg:text-lg">
               Download How to Choose a Healthcare Plan for Your Business to
               learn which questions you should be asking when evaluating health
               plan providers.
@@ -700,36 +879,42 @@
             </button>
           </div>
 
-          <div class="fadeIn relative basis-1/2">
+          <div
+            class="fadeIn relative flex items-end justify-end px-1 lg:basis-1/2"
+          >
             <img
               loading="lazy"
               alt="book cover"
-              src="./src/assets/images/image12.png"
-              class="absolute bottom-8 right-5 aspect-square"
+              src="./src/assets/images/image12.webp"
+              class="aspect-[9/11] h-full lg:absolute lg:bottom-10 lg:left-24"
             />
 
             <img
               loading="lazy"
               alt="book cover"
-              src="./src/assets/images/image12.png"
-              class="absolute bottom-0 right-32"
+              src="./src/assets/images/image12.webp"
+              class="absolute right-0 aspect-[9/11] h-3/4 lg:left-0 lg:h-full"
             />
           </div>
         </div>
       </section>
 
-      <section id="section-6" class="bg-cream py-32">
-        <h2
-          class="fadeIn text-center text-xl font-bold leading-[4.5rem] text-relianceDarkBlue md:text-3xl xl:text-4xl"
-        >
-          Frequently asked questions
-        </h2>
+      <section id="section-6" class="bg-cream py-10 lg:py-32">
+        <div class="px-2">
+          <h2
+            class="fadeIn text-center text-2xl font-bold leading-[4.5rem] text-relianceDarkBlue md:text-3xl xl:text-4xl"
+          >
+            Frequently asked questions
+          </h2>
 
-        <p class="fadeIn text-center text-lg text-relianceDarkBlue">
-          Everything you need to know about partnering with us
-        </p>
+          <p
+            class="fadeIn text-center text-sm text-relianceDarkBlue lg:text-lg"
+          >
+            Everything you need to know about partnering with us
+          </p>
+        </div>
 
-        <div class="mt-16 space-y-4 px-12 md:px-48 xl:px-72">
+        <div class="mt-8 space-y-4 px-5 md:px-48 lg:mt-16 xl:px-72">
           <details class="fadeIn details-style group" open>
             <summary class="summary-style">
               <p class="summary-text">
@@ -799,17 +984,24 @@
         </div>
       </section>
 
-      <footer id="section-7" class="relative flex flex-col overflow-hidden">
+      <footer
+        id="section-7"
+        class="relative flex flex-col overflow-hidden text-sm lg:text-base"
+      >
         <div
-          class="relative flex flex-col items-center justify-center space-y-5 py-12"
+          class="relative flex flex-col items-center justify-center space-y-5 px-2 py-20"
         >
-          <h2 class="fadeIn text-4xl font-bold text-relianceDarkBlue">
+          <h2
+            class="fadeIn text-center text-2xl font-bold text-relianceDarkBlue lg:text-4xl"
+          >
             Partner with Reliance HMO today
           </h2>
 
-          <p class="fadeIn text-center text-lg text-relianceDarkBlue">
+          <p
+            class="fadeIn text-center text-sm text-relianceDarkBlue lg:text-lg"
+          >
             Want to improve the lives of your workforce and join the
-            next-generation<br />
+            next-generation<br class="hidden lg:block" />
             businesses using our Healthcare provide? Partner with us today.
           </p>
 
@@ -818,19 +1010,26 @@
           </button>
         </div>
 
-        <div class="flex justify-between bg-white px-24 py-12 2xl:px-32">
-          <ul>
+        <div
+          class="grid grid-cols-2 grid-rows-[0.25fr_1fr_1fr] flex-wrap gap-y-5 bg-white px-5 py-4 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr] lg:grid-rows-1 lg:px-24 lg:py-12 2xl:px-32"
+        >
+          <ul
+            class="col-span-full row-start-1 row-end-1 lg:col-auto lg:row-auto"
+          >
             <li>
               <img
                 loading="lazy"
-                src="./src/assets/images/image 1.png"
+                src="./src/assets/images/image 1.webp"
+                src="./src/assets/images/image 1.webp"
                 class="fadeIn aspect-video"
                 alt="brand logo"
               />
             </li>
           </ul>
 
-          <ul class="space-y-4">
+          <ul
+            class="col-start-1 col-end-1 row-start-2 row-end-2 space-y-2 lg:col-auto lg:row-auto"
+          >
             <li class="fadeIn">
               <h1 class="footer-header">About</h1>
             </li>
@@ -852,7 +1051,9 @@
             </li>
           </ul>
 
-          <ul class="space-y-4">
+          <ul
+            class="col-start-2 col-end-2 row-start-2 row-end-2 space-y-2 lg:col-auto lg:row-auto"
+          >
             <li class="fadeIn">
               <h1 class="footer-header">Support</h1>
             </li>
@@ -866,7 +1067,9 @@
             </li>
           </ul>
 
-          <ul class="space-y-4">
+          <ul
+            class="col-start-1 col-end-1 row-start-3 row-end-3 space-y-2 lg:col-auto lg:row-auto"
+          >
             <li class="fadeIn">
               <h1 class="footer-header">Legal</h1>
             </li>
@@ -880,7 +1083,9 @@
             </li>
           </ul>
 
-          <ul class="space-y-4">
+          <ul
+            class="col-start-2 col-end-2 row-start-3 row-end-3 space-y-2 lg:col-auto lg:row-auto"
+          >
             <li class="fadeIn">
               <h1 class="footer-header">Contact Us</h1>
             </li>
@@ -907,60 +1112,30 @@
         </div>
 
         <div class="bg-footer-gradient pb-3">
-          <div class="w-full rounded-b-2xl bg-white p-2 text-center">
+          <div
+            class="w-full rounded-b-3xl bg-white p-2 text-center lg:rounded-b-2xl"
+          >
             <p class="fadeIn text-sm text-relianceDarkBlue">
               &copy; 2024 Redesigned by Daniel Osonuga
             </p>
           </div>
         </div>
 
-        <svg
-          width="305"
-          height="460"
-          viewBox="0 0 305 460"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="pointer-events-none absolute -top-32 left-0"
-        >
-          <path
-            d="M304.003 229.25C304.003 234.789 302.912 240.274 300.792 245.392C298.673 250.509 295.566 255.159 291.649 259.076C287.732 262.993 283.082 266.1 277.965 268.22C272.847 270.339 267.362 271.43 261.823 271.43H77.6919C72.1527 271.43 66.6677 270.339 61.5501 268.22C56.4325 266.1 51.7826 262.993 47.8658 259.076C43.949 255.159 40.842 250.509 38.7222 245.392C36.6024 240.274 35.5114 234.789 35.5114 229.25V45.7416C35.162 39.9972 35.9917 34.2422 37.9496 28.8305C39.9074 23.4189 42.952 18.4651 46.8958 14.274C50.8397 10.083 55.5995 6.74327 60.8823 4.46045C66.1651 2.17764 71.8591 1 77.6141 1C83.369 1 89.063 2.17764 94.3458 4.46045C99.6286 6.74327 104.388 10.083 108.332 14.274C112.276 18.4651 115.321 23.4189 117.279 28.8305C119.236 34.2422 120.066 39.9972 119.717 45.7416V187.692H261.823C272.903 187.691 283.538 192.049 291.431 199.825C299.324 207.602 303.84 218.171 304.003 229.25Z"
-            stroke="#009DF5"
-            stroke-opacity="0.2"
-            stroke-width="2"
-            stroke-miterlimit="10"
-          />
-          <path
-            d="M-148 229.252C-147.959 218.092 -143.496 207.403 -135.59 199.526C-127.685 191.649 -116.979 187.227 -105.819 187.227H77.6891C83.2674 187.144 88.8066 188.169 93.9861 190.243C99.1655 192.316 103.882 195.396 107.863 199.304C111.844 203.213 115.01 207.872 117.178 213.013C119.346 218.153 120.472 223.673 120.492 229.252V413.538C120.842 419.282 120.012 425.038 118.054 430.449C116.096 435.861 113.052 440.815 109.108 445.006C105.164 449.197 100.404 452.536 95.1213 454.819C89.8385 457.102 84.1444 458.28 78.3895 458.28C72.6346 458.28 66.9405 457.102 61.6577 454.819C56.3749 452.536 51.6151 449.197 47.6713 445.006C43.7274 440.815 40.6828 435.861 38.725 430.449C36.7672 425.038 35.9374 419.282 36.2869 413.538V271.588H-105.819C-111.372 271.588 -116.869 270.492 -121.997 268.362C-127.125 266.233 -131.782 263.112 -135.701 259.178C-139.619 255.245 -142.723 250.577 -144.834 245.441C-146.944 240.306 -148.02 234.804 -148 229.252Z"
-            stroke="#009DF5"
-            stroke-opacity="0.2"
-            stroke-width="2"
-            stroke-miterlimit="10"
-          />
-        </svg>
+        <img
+          src="./src/assets/svgs/footersvg.svg"
+          alt="svg"
+          loading="lazy"
+          loading="lazy"
+          class="pointer-events-none absolute -top-20 left-0 max-w-56"
+        />
 
-        <svg
-          width="305"
-          height="460"
-          viewBox="0 0 305 460"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 rotate-180"
-        >
-          <path
-            d="M304.003 229.25C304.003 234.789 302.912 240.274 300.792 245.392C298.673 250.509 295.566 255.159 291.649 259.076C287.732 262.993 283.082 266.1 277.965 268.22C272.847 270.339 267.362 271.43 261.823 271.43H77.6919C72.1527 271.43 66.6677 270.339 61.5501 268.22C56.4325 266.1 51.7826 262.993 47.8658 259.076C43.949 255.159 40.842 250.509 38.7222 245.392C36.6024 240.274 35.5114 234.789 35.5114 229.25V45.7416C35.162 39.9972 35.9917 34.2422 37.9496 28.8305C39.9074 23.4189 42.952 18.4651 46.8958 14.274C50.8397 10.083 55.5995 6.74327 60.8823 4.46045C66.1651 2.17764 71.8591 1 77.6141 1C83.369 1 89.063 2.17764 94.3458 4.46045C99.6286 6.74327 104.388 10.083 108.332 14.274C112.276 18.4651 115.321 23.4189 117.279 28.8305C119.236 34.2422 120.066 39.9972 119.717 45.7416V187.692H261.823C272.903 187.691 283.538 192.049 291.431 199.825C299.324 207.602 303.84 218.171 304.003 229.25Z"
-            stroke="#009DF5"
-            stroke-opacity="0.2"
-            stroke-width="2"
-            stroke-miterlimit="10"
-          />
-          <path
-            d="M-148 229.252C-147.959 218.092 -143.496 207.403 -135.59 199.526C-127.685 191.649 -116.979 187.227 -105.819 187.227H77.6891C83.2674 187.144 88.8066 188.169 93.9861 190.243C99.1655 192.316 103.882 195.396 107.863 199.304C111.844 203.213 115.01 207.872 117.178 213.013C119.346 218.153 120.472 223.673 120.492 229.252V413.538C120.842 419.282 120.012 425.038 118.054 430.449C116.096 435.861 113.052 440.815 109.108 445.006C105.164 449.197 100.404 452.536 95.1213 454.819C89.8385 457.102 84.1444 458.28 78.3895 458.28C72.6346 458.28 66.9405 457.102 61.6577 454.819C56.3749 452.536 51.6151 449.197 47.6713 445.006C43.7274 440.815 40.6828 435.861 38.725 430.449C36.7672 425.038 35.9374 419.282 36.2869 413.538V271.588H-105.819C-111.372 271.588 -116.869 270.492 -121.997 268.362C-127.125 266.233 -131.782 263.112 -135.701 259.178C-139.619 255.245 -142.723 250.577 -144.834 245.441C-146.944 240.306 -148.02 234.804 -148 229.252Z"
-            stroke="#009DF5"
-            stroke-opacity="0.2"
-            stroke-width="2"
-            stroke-miterlimit="10"
-          />
-        </svg>
+        <img
+          src="./src/assets/svgs/footersvg.svg"
+          alt="svg"
+          loading="lazy"
+          loading="lazy"
+          class="pointer-events-none absolute right-0 top-1/2 max-w-56 -translate-y-1/2 rotate-180"
+        />
       </footer>
     </div>
     <script type="module" src="/src/main.ts"></script>

@@ -7,6 +7,7 @@
   src: url("/fonts/ProximaNova-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
   src: url("/fonts/Proxima\ Nova\ Thin.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -21,6 +23,7 @@
   src: url("/fonts/Proxima\ Nova\ Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -28,6 +31,7 @@
   src: url("/fonts/Proxima\ Nova\ Semibold.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -35,10 +39,23 @@
   src: url("/fonts/Proxima\ Nova\ Extrabold.otf.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 
 body {
   font-family: "Proxima Nova", sans-serif;
+}
+
+.active {
+  @apply !block animate-flash;
+}
+
+.polive {
+  @apply !block animate-slideIn;
+}
+
+.dropdownHidden {
+  @apply !hidden animate-slideOut;
 }
 
 @layer components {
@@ -48,6 +65,10 @@ body {
 
   .primary-btn {
     @apply rounded-lg border-b-2 border-b-[#0a212e3a] bg-relianceLightBlue px-9 py-2.5 capitalize text-white ring ring-[#33B1F74D] drop-shadow-xl transition-colors duration-300 ease-in-out hover:border-b-slate-600 hover:bg-relianceDarkBlue hover:ring-[#11191C1A] active:border-b-slate-600 active:bg-relianceDarkBlue active:ring-[#11191C1A];
+  }
+
+  .logo-container {
+    @apply flex max-h-20 min-h-16 justify-center;
   }
 
   .inner-2-div {
@@ -67,19 +88,23 @@ body {
   }
 
   .span-no {
-    @apply flex h-10 w-10 items-center justify-center rounded-full border-b-2 border-t-[.1875rem] border-b-[#04040A17] border-t-[#33B1F7] bg-relianceLightBlue text-center leading-8 text-white shadow-inner ring ring-[#33B1F74D] ring-offset-1;
+    @apply flex h-8 w-8 items-center justify-center rounded-full border-b-2 border-t-[.1875rem] border-b-[#04040A17] border-t-[#33B1F7] bg-relianceLightBlue text-center text-xs leading-8 text-white shadow-inner ring ring-[#33B1F74D] ring-offset-1 lg:text-base;
   }
 
   .inner-4-div {
-    @apply flex items-center justify-normal gap-x-5 rounded-xl border bg-white p-6 drop-shadow-sm lg:items-start;
+    @apply flex items-start justify-normal gap-x-5 rounded-xl border bg-white p-3 drop-shadow-sm lg:p-6;
+  }
+
+  .inner-4-div-texts {
+    @apply space-y-1.5 lg:space-y-3;
   }
 
   .inner-4-div-heading {
-    @apply font-semibold;
+    @apply text-sm font-semibold lg:text-base;
   }
 
   .inner-4-div-leading-text {
-    @apply text-sm text-relianceGrey;
+    @apply text-xs text-relianceGrey lg:text-sm;
   }
 
   .fadeIn {
@@ -87,7 +112,7 @@ body {
   }
 
   .testimonial-container {
-    @apply flex flex-col items-center gap-y-3 rounded-md;
+    @apply flex flex-col items-center gap-y-4 rounded-md;
   }
 
   .testimonial {
@@ -135,14 +160,14 @@ body {
   }
 
   .summary-text {
-    @apply text-inherit;
+    @apply py-1.5 text-sm text-inherit lg:text-base;
   }
   .details-open-style {
-    @apply text-2xl group-open:hidden;
+    @apply text-lg group-open:hidden lg:text-2xl;
   }
 
   .details-close-style {
-    @apply hidden text-2xl group-open:block group-open:animate-flash;
+    @apply hidden text-lg group-open:block group-open:animate-flash lg:text-2xl;
   }
 
   .details-summary-info {

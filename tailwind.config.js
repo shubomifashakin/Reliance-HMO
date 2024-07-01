@@ -25,12 +25,30 @@ module.exports = {
 
       animation: {
         flash: "flash .5s ease-in-out",
+        slideIn: "slideIn .5s ease-in-out",
+        slideOut: "slideOut .5s ease-in-out",
+        slideLeft: "slideLeft 15s  forwards linear infinite 1.5s",
       },
 
       keyframes: {
         flash: {
           from: { opacity: 0 },
           to: { opacity: 1 },
+        },
+
+        slideIn: {
+          from: { top: "-100%" },
+          to: { top: "100%" },
+        },
+
+        slideOut: {
+          from: { top: "100%" },
+          to: { top: "-100%" },
+        },
+
+        slideLeft: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
         },
       },
 
@@ -39,6 +57,13 @@ module.exports = {
       },
 
       fontSize: {
+        "3.5xl": [
+          "2.25rem",
+          {
+            lineHeight: "2.25rem",
+            letterSpacing: "-0.0625rem",
+          },
+        ],
         "4xl": [
           "2.5rem",
           {
