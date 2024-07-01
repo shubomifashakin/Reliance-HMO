@@ -115,13 +115,17 @@ class App implements App {
   }
 
   heroAnimation(): void {
-    const tl = gsap.timeline({
-      defaults: { duration: 0.5, ease: "power1.inOut" },
-    });
+    const mm = gsap.matchMedia();
 
-    tl.from("#navbar", { opacity: 0, delay: 0.5 })
-      .from("#hero-left", { opacity: 0 })
-      .from("#hero-right", { opacity: 0 });
+    mm.add("(min-width: 1024px)", () => {
+      const tl = gsap.timeline({
+        defaults: { duration: 0.5, ease: "power1.inOut" },
+      });
+
+      tl.from("#navbar", { opacity: 0, delay: 0.5 })
+        .from("#hero-left", { opacity: 0 })
+        .from("#hero-right", { opacity: 0 });
+    });
   }
 }
 new App();

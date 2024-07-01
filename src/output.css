@@ -1151,6 +1151,10 @@ video {
   inset: -0.25rem;
 }
 
+.-bottom-8 {
+  bottom: -2rem;
+}
+
 .-top-20 {
   top: -5rem;
 }
@@ -1171,6 +1175,14 @@ video {
   left: 0px;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
+.left-12 {
+  left: 3rem;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -1187,16 +1199,16 @@ video {
   top: 50%;
 }
 
+.top-\[5\.5rem\] {
+  top: 5.5rem;
+}
+
 .isolate {
   isolation: isolate;
 }
 
 .isolation-auto {
   isolation: auto;
-}
-
-.-z-10 {
-  z-index: -10;
 }
 
 .z-10 {
@@ -1466,14 +1478,6 @@ video {
   aspect-ratio: 2.23/1;
 }
 
-.aspect-\[2\/3\] {
-  aspect-ratio: 2/3;
-}
-
-.aspect-\[3\/2\] {
-  aspect-ratio: 3/2;
-}
-
 .aspect-\[9\/11\] {
   aspect-ratio: 9/11;
 }
@@ -1494,20 +1498,16 @@ video {
   height: 0.5rem;
 }
 
-.h-3\/4 {
-  height: 75%;
-}
-
-.h-4 {
-  height: 1rem;
-}
-
 .h-5 {
   height: 1.25rem;
 }
 
 .h-full {
   height: 100%;
+}
+
+.h-3\/4 {
+  height: 75%;
 }
 
 .w-1 {
@@ -1580,6 +1580,11 @@ video {
 
 .border-separate {
   border-collapse: separate;
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .-translate-y-1\/2 {
@@ -3613,6 +3618,8 @@ video {
   font-weight: 400;
 
   font-style: normal;
+
+  font-display: swap;
 }
 
 @font-face {
@@ -3623,6 +3630,8 @@ video {
   font-weight: 300;
 
   font-style: normal;
+
+  font-display: swap;
 }
 
 @font-face {
@@ -3633,6 +3642,8 @@ video {
   font-weight: 700;
 
   font-style: normal;
+
+  font-display: swap;
 }
 
 @font-face {
@@ -3643,6 +3654,8 @@ video {
   font-weight: 600;
 
   font-style: normal;
+
+  font-display: swap;
 }
 
 @font-face {
@@ -3653,6 +3666,8 @@ video {
   font-weight: 800;
 
   font-style: normal;
+
+  font-display: swap;
 }
 
 body {
@@ -3873,6 +3888,10 @@ details > summary::-webkit-details-marker {
     left: 6rem;
   }
 
+  .lg\:top-0 {
+    top: 0px;
+  }
+
   .lg\:order-2 {
     order: 2;
   }
@@ -3915,6 +3934,11 @@ details > summary::-webkit-details-marker {
 
   .lg\:basis-1\/2 {
     flex-basis: 50%;
+  }
+
+  .lg\:translate-x-0 {
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:animate-none {
