@@ -84,7 +84,7 @@ body {
   }
 
   .image-container {
-    @apply relative flex min-h-48 w-full items-center justify-center overflow-hidden lg:min-h-64;
+    @apply relative flex min-h-40 w-full items-center justify-center overflow-hidden lg:min-h-64;
   }
 
   .span-no {
