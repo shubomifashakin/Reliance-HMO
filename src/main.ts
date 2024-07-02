@@ -105,7 +105,7 @@ class App implements App {
 
             scrollTrigger: {
               trigger: c,
-              end: "top bottom",
+              end: "bottom bottom",
               scrub: 1,
             },
           });
