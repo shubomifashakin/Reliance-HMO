@@ -82,35 +82,6 @@ class App implements App {
           },
         });
       });
-
-      mm.add("(min-width: 300px) and (max-width: 1024px)", () => {
-        if (c.contains(document.querySelector("#headphones"))) {
-          gsap.from(c, {
-            opacity: 0,
-            duration: 2,
-            borderRadius: "100%",
-            ease: "power1.in",
-
-            scrollTrigger: {
-              trigger: c,
-              end: "bottom bottom",
-              scrub: 1,
-            },
-          });
-        } else {
-          gsap.from(c, {
-            opacity: 0,
-            duration: 2,
-            ease: "power1.in",
-
-            scrollTrigger: {
-              trigger: c,
-              end: "bottom bottom",
-              scrub: 1,
-            },
-          });
-        }
-      });
     });
   }
 
