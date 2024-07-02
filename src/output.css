@@ -1502,10 +1502,6 @@ video {
   height: 100%;
 }
 
-.min-h-20 {
-  min-height: 5rem;
-}
-
 .w-1 {
   width: 0.25rem;
 }
@@ -3929,10 +3925,6 @@ details > summary::-webkit-details-marker {
 
   .lg\:min-h-64 {
     min-height: 16rem;
-  }
-
-  .lg\:min-w-64 {
-    min-width: 16rem;
   }
 
   .lg\:basis-1\/2 {
