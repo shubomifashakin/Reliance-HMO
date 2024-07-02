@@ -733,9 +733,17 @@ video {
 .image-container {
   position: relative;
   display: flex;
+  min-height: 12rem;
+  width: 100%;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .image-container {
+    min-height: 16rem;
+  }
 }
 
 .span-no {
@@ -1151,10 +1159,6 @@ video {
   inset: -0.25rem;
 }
 
-.-bottom-8 {
-  bottom: -2rem;
-}
-
 .-top-20 {
   top: -5rem;
 }
@@ -1175,14 +1179,6 @@ video {
   left: 0px;
 }
 
-.left-1\/2 {
-  left: 50%;
-}
-
-.left-12 {
-  left: 3rem;
-}
-
 .right-0 {
   right: 0px;
 }
@@ -1197,10 +1193,6 @@ video {
 
 .top-1\/2 {
   top: 50%;
-}
-
-.top-\[5\.5rem\] {
-  top: 5.5rem;
 }
 
 .isolate {
@@ -1490,12 +1482,24 @@ video {
   aspect-ratio: 16 / 9;
 }
 
+.aspect-\[1\.5\] {
+  aspect-ratio: 1.5;
+}
+
+.aspect-\[0\.67\] {
+  aspect-ratio: 0.67;
+}
+
 .h-1 {
   height: 0.25rem;
 }
 
 .h-2 {
   height: 0.5rem;
+}
+
+.h-3\/4 {
+  height: 75%;
 }
 
 .h-5 {
@@ -1506,8 +1510,20 @@ video {
   height: 100%;
 }
 
-.h-3\/4 {
-  height: 75%;
+.min-h-96 {
+  min-height: 24rem;
+}
+
+.min-h-48 {
+  min-height: 12rem;
+}
+
+.min-h-64 {
+  min-height: 16rem;
+}
+
+.min-h-72 {
+  min-height: 18rem;
 }
 
 .w-1 {
@@ -1528,6 +1544,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.min-w-64 {
+  min-width: 16rem;
 }
 
 .max-w-56 {
@@ -1580,11 +1600,6 @@ video {
 
 .border-separate {
   border-collapse: separate;
-}
-
-.-translate-x-1\/2 {
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .-translate-y-1\/2 {
@@ -3888,10 +3903,6 @@ details > summary::-webkit-details-marker {
     left: 6rem;
   }
 
-  .lg\:top-0 {
-    top: 0px;
-  }
-
   .lg\:order-2 {
     order: 2;
   }
@@ -3932,13 +3943,12 @@ details > summary::-webkit-details-marker {
     height: 100%;
   }
 
-  .lg\:basis-1\/2 {
-    flex-basis: 50%;
+  .lg\:min-h-64 {
+    min-height: 16rem;
   }
 
-  .lg\:translate-x-0 {
-    --tw-translate-x: 0px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  .lg\:basis-1\/2 {
+    flex-basis: 50%;
   }
 
   .lg\:animate-none {
