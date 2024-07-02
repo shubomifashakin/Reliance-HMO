@@ -733,7 +733,6 @@ video {
 .image-container {
   position: relative;
   display: flex;
-  min-height: 10rem;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -1504,14 +1503,6 @@ video {
 
 .min-h-20 {
   min-height: 5rem;
-}
-
-.min-h-48 {
-  min-height: 12rem;
-}
-
-.min-h-96 {
-  min-height: 24rem;
 }
 
 .w-1 {
